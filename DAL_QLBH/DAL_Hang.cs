@@ -14,7 +14,7 @@ namespace DAL_QLBH
         public DataTable getHang()
         {
             DataTable dtHang = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("sekect * from hang", _con);
+            SqlDataAdapter da = new SqlDataAdapter("select * from hang", _con);
             da.Fill(dtHang);
             return dtHang;
         }

@@ -23,7 +23,10 @@ namespace QLBH
         public frmMain_QLBH()
         {
             InitializeComponent();
+           
+
         }
+       
         private void frmMain_QLBH_Load(object sender, EventArgs e)
         {
             ResetValue();
@@ -95,6 +98,7 @@ namespace QLBH
             if (!CheckExistForm(dn.Name))
             {
                 dn.MdiParent = this;
+                dn.TopMost = true;
                 dn.Show();
                 dn.FormClosed += new FormClosedEventHandler(frmDangNhap_FormClosed);
             }
@@ -172,6 +176,20 @@ namespace QLBH
         }
 
         private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHang frmHang = new frmHang();
+            if (!CheckExistForm(frmHang.Name))
+            {
+                frmHang.MdiParent = this;
+                frmHang.Show();
+            }
+            else
+            {
+                ActiveChildForm(frmHang.Name);
+            }
+        }
+
+        private void frmMain_QLBH_MdiChildActivate(object sender, EventArgs e)
         {
 
         }
