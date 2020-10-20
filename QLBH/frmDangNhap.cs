@@ -22,6 +22,7 @@ namespace QLBH
         public frmDangNhap()
         {
             InitializeComponent();
+            this.BringToFront();
         }
         private void frmDangNhap_Load(object sender, EventArgs e)
         {

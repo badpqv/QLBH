@@ -45,7 +45,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(17, 98);
+            this.label1.Location = new System.Drawing.Point(18, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(331, 37);
             this.label1.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             this.txt_emailnv.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_emailnv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_emailnv.Location = new System.Drawing.Point(19, 192);
+            this.txt_emailnv.Location = new System.Drawing.Point(20, 192);
             this.txt_emailnv.Name = "txt_emailnv";
             this.txt_emailnv.Size = new System.Drawing.Size(329, 26);
             this.txt_emailnv.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             this.txt_pass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pass.Location = new System.Drawing.Point(19, 261);
+            this.txt_pass.Location = new System.Drawing.Point(20, 261);
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.PasswordChar = '*';
             this.txt_pass.Size = new System.Drawing.Size(329, 26);
@@ -77,7 +77,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(19, 157);
+            this.label2.Location = new System.Drawing.Point(20, 157);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(179, 25);
             this.label2.TabIndex = 3;
@@ -101,7 +101,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.Gray;
-            this.checkBox1.Location = new System.Drawing.Point(5, 294);
+            this.checkBox1.Location = new System.Drawing.Point(6, 294);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(176, 28);
             this.checkBox1.TabIndex = 5;
@@ -116,7 +116,7 @@
             this.btn_dangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_dangnhap.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_dangnhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_dangnhap.Location = new System.Drawing.Point(78, 340);
+            this.btn_dangnhap.Location = new System.Drawing.Point(79, 340);
             this.btn_dangnhap.Name = "btn_dangnhap";
             this.btn_dangnhap.Size = new System.Drawing.Size(219, 34);
             this.btn_dangnhap.TabIndex = 7;
@@ -131,7 +131,7 @@
             this.btn_thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_thoat.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_thoat.Location = new System.Drawing.Point(78, 380);
+            this.btn_thoat.Location = new System.Drawing.Point(79, 380);
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.Size = new System.Drawing.Size(219, 35);
             this.btn_thoat.TabIndex = 8;
@@ -146,7 +146,7 @@
             this.btn_quenmk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_quenmk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_quenmk.ForeColor = System.Drawing.Color.Gray;
-            this.btn_quenmk.Location = new System.Drawing.Point(187, 294);
+            this.btn_quenmk.Location = new System.Drawing.Point(188, 294);
             this.btn_quenmk.Name = "btn_quenmk";
             this.btn_quenmk.Size = new System.Drawing.Size(161, 28);
             this.btn_quenmk.TabIndex = 9;
@@ -160,7 +160,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(363, 450);
+            this.ClientSize = new System.Drawing.Size(364, 451);
             this.Controls.Add(this.btn_quenmk);
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.btn_dangnhap);
@@ -174,6 +174,7 @@
             this.Name = "frmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formdangnhap - QLBH";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.frmDangNhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

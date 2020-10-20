@@ -39,9 +39,34 @@ namespace BUS_QLBH
         {
             return dalNhanVien.TaoMatKhau(email, encryption(mkMoi));
         }
+        public bool UpdateMatKhau(string email,string mkCu, string mkMoi)
+        {
+            return dalNhanVien.UpdateMatKhau(email, mkCu, mkMoi);
+        }
+        public bool InsertNhanVien(DTO_Nhanvien nv)
+        {
+            return dalNhanVien.InsertNhanVien(nv);
+        }
+        public bool UpdateNhanVien(DTO_Nhanvien nv)
+        {
+            return dalNhanVien.UpdateNhanVien(nv);
+        }
+        public bool DeleteNhanVien(string email)
+        {
+            return dalNhanVien.DeleteNhanVien(email);
+        }
         public DataTable VaiTroNhanVien(string email)
         {
             return dalNhanVien.VaiTroNhanVien(email);
         }
+        public DataTable getNhanVien()
+        {
+            return dalNhanVien.getNhanVien();
+        }
+        public DataTable SearchNhanVien(string tenNv)
+        {
+            return dalNhanVien.SearchNhanVien(tenNv);
+        }
+
     }
 }

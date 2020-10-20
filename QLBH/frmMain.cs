@@ -28,7 +28,8 @@ namespace QLBH
             ResetValue();
             if (profile == 1)
             {
-                
+                hồSơNhânViênToolStripMenuItem.Visible = false;
+                profile = 0;
             }
         }
         private void ResetValue()
@@ -36,9 +37,9 @@ namespace QLBH
             if(session == 1)
             {
                 nhânViênToolStripMenuItem.Enabled = true;
-                danhMụcToolStripMenuItem.Enabled = true;
+                danhMụcToolStripMenuItem.Visible = true;
                 đăngXuấtToolStripMenuItem.Enabled = true;
-                thốngKêToolStripMenuItem.Enabled = true;
+                thốngKêToolStripMenuItem.Visible = true;
                 thốngKêSảnPhẩmToolStripMenuItem.Visible = true;
                 hồSơNhânViênToolStripMenuItem.Visible = true;
                 đăngNhậpToolStripMenuItem.Enabled = false;
@@ -50,9 +51,9 @@ namespace QLBH
             else
             {
                 nhânViênToolStripMenuItem.Enabled = false;
-                danhMụcToolStripMenuItem.Enabled = false;
+                danhMụcToolStripMenuItem.Visible = false;
                 đăngXuấtToolStripMenuItem.Enabled = false;
-                thốngKêToolStripMenuItem.Enabled = false;
+                thốngKêToolStripMenuItem.Visible = false;
                 thốngKêSảnPhẩmToolStripMenuItem.Visible = false;
                 hồSơNhânViênToolStripMenuItem.Visible = false;
                 đăngNhậpToolStripMenuItem.Enabled = true;
@@ -94,7 +95,7 @@ namespace QLBH
             {
                 dn.MdiParent = this;
                 dn.Show();
-                dn.FormClosed += new FormClosedEventHandler(frmDangNhap_FormClosed)+;
+                dn.FormClosed += new FormClosedEventHandler(frmDangNhap_FormClosed);
             }
             else
             {
@@ -110,8 +111,49 @@ namespace QLBH
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             session = 0;
+            ResetValue();
         }
 
-       
+        private void hồSơNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmThongTinNV profileNv = new frmThongTinNV(email);
+            if (!CheckExistForm(profileNv.Name))
+            {
+                profileNv.MdiParent = this;
+                profileNv.Show();
+                profileNv.FormClosed += new FormClosedEventHandler(frmThongTinNv_FormClosed);
+            }
+            else
+                ActiveChildForm(profileNv.Name);
+        }
+        private void frmThongTinNv_FormClosed(object sender,EventArgs e)
+        {
+            this.Refresh();
+            frmMain_QLBH_Load(sender, e);
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNhanVien frmNhanVien = new frmNhanVien();
+            if (!CheckExistForm(frmNhanVien.Name))
+            {
+                frmNhanVien.MdiParent = this;
+                frmNhanVien.Show();
+            }
+            else
+            {
+                ActiveChildForm(frmNhanVien.Name);
+            }
+        }
+
+        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
