@@ -188,6 +188,7 @@ namespace QLBH
                 txt_diachi.Focus();
                 return;
             }
+            
             else
             {
                 DTO_Khachhang khachhang = new DTO_Khachhang(txt_sdt.Text, txt_tenkhach.Text, txt_diachi.Text, gioitinh, stremail);

@@ -137,6 +137,7 @@
             this.btn_thoat.TabIndex = 8;
             this.btn_thoat.Text = "Thoát";
             this.btn_thoat.UseVisualStyleBackColor = false;
+            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
             // 
             // btn_quenmk
             // 

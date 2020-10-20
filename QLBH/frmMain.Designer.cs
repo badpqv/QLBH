@@ -116,8 +116,9 @@
             // sảnPhẩmToolStripMenuItem
             // 
             this.sảnPhẩmToolStripMenuItem.Name = "sảnPhẩmToolStripMenuItem";
-            this.sảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.sảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sảnPhẩmToolStripMenuItem.Text = "Sản phẩm";
+            this.sảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.sảnPhẩmToolStripMenuItem_Click);
             // 
             // nhânViênToolStripMenuItem
             // 
@@ -129,7 +130,7 @@
             // kháchHàngToolStripMenuItem
             // 
             this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.kháchHàngToolStripMenuItem.Text = "Khách hàng";
             this.kháchHàngToolStripMenuItem.Click += new System.EventHandler(this.kháchHàngToolStripMenuItem_Click);
             // 
@@ -161,6 +162,7 @@
             this.hướngDẫnSữDụngToolStripMenuItem.Name = "hướngDẫnSữDụngToolStripMenuItem";
             this.hướngDẫnSữDụngToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.hướngDẫnSữDụngToolStripMenuItem.Text = "Hướng dẫn sữ dụng";
+            this.hướngDẫnSữDụngToolStripMenuItem.Click += new System.EventHandler(this.hướngDẫnSữDụngToolStripMenuItem_Click);
             // 
             // giớiThiệuPhầnMềmToolStripMenuItem
             // 
@@ -176,10 +178,10 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(218, 38);
+            this.label1.Location = new System.Drawing.Point(218, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(664, 39);
-            this.label1.TabIndex = 2;
+            this.label1.TabIndex = 3;
             this.label1.Text = "DỰ ÁN MẪU C# - QUẢN LÝ BÁN HÀNG";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
