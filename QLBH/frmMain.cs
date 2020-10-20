@@ -153,7 +153,16 @@ namespace QLBH
 
         private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmKhachHang khachHang = new frmKhachHang();
+            if (!CheckExistForm(khachHang.Name))
+            {
+                khachHang.MdiParent = this;
+                khachHang.Show();
+            }
+            else
+            {
+                ActiveChildForm(khachHang.Name);
+            }
         }
     }
 }
