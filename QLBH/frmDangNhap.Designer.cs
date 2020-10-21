@@ -117,7 +117,7 @@ namespace QLBH
             // btn_dangnhap
             // 
             this.btn_dangnhap.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_dangnhap.BackColor = System.Drawing.Color.ForestGreen;
+            this.btn_dangnhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
             this.btn_dangnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_dangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_dangnhap.ForeColor = System.Drawing.SystemColors.Control;
@@ -133,7 +133,7 @@ namespace QLBH
             // btn_thoat
             // 
             this.btn_thoat.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_thoat.BackColor = System.Drawing.Color.ForestGreen;
+            this.btn_thoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
             this.btn_thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_thoat.ForeColor = System.Drawing.SystemColors.Control;

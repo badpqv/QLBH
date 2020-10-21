@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ namespace DAL_QLBH
 {
     public class DbConnect
     {
-        protected SqlConnection _con = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB;AttachDbFilename = |DataDirectory|\DuAnMau.mdf;Integrated Security =True;");
+        static string conStr = ConfigurationManager.ConnectionStrings["QLBH"].ToString();
+        protected SqlConnection _con = new SqlConnection(conStr);
     }
 }

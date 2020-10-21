@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime;
 using System.Text;
@@ -214,7 +215,14 @@ namespace QLBH
 
         private void giớiThiệuPhầnMềmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start(Application.StartupPath + "\\SOF205_Project document.docx");
+            try
+            {
+                Process.Start(Application.StartupPath + "\\SOF205_Project document.docx");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
       
