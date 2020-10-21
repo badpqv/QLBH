@@ -61,8 +61,8 @@ namespace QLBH
                     Settings.Default.isRemember = false;
                     Settings.Default.Save();
                 }
-                this.Close();
                
+                this.Close();
             }
             else
             {

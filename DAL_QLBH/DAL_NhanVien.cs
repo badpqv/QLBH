@@ -18,7 +18,47 @@ namespace DAL_QLBH
             SqlDataAdapter da = new SqlDataAdapter("Select * from NhanVien", _con);
             da.Fill(dtNhanvien);
             return dtNhanvien;
+        } 
+        public DataTable VaiTroNhanVien(string email)
+        {
+            try
+            {
+                _con.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "VaiTroNV";
+                cmd.Parameters.AddWithValue("email", email);
+                cmd.Connection = _con;
+                DataTable dtNhanVien = new DataTable();
+                dtNhanVien = new DataTable();
+                dtNhanVien.Load(cmd.ExecuteReader());
+                return dtNhanVien;
+            }
+            finally
+            {
+                _con.Close();
+            }
         }
+        public DataTable SearchNhanVien(string tenNv)
+        {
+            try
+            {
+                _con.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _con;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "[sp_SearchNhanVien]";
+                cmd.Parameters.AddWithValue("tenNV", tenNv);
+                DataTable dtNhanVien = new DataTable();
+                dtNhanVien.Load(cmd.ExecuteReader());
+                return dtNhanVien;
+            }
+            finally
+            {
+                _con.Close();
+            }
+        }
+       
         public bool NhanVienDangNhap(DTO_Nhanvien nv)
         {
             try
@@ -33,7 +73,7 @@ namespace DAL_QLBH
                     return true;
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
 
             }
@@ -78,10 +118,10 @@ namespace DAL_QLBH
                 cmd.CommandText = "TaoMatKhauMoi";
                 cmd.Parameters.AddWithValue("email", email);
                 cmd.Parameters.AddWithValue("matkhau", matkhaumoi);
-                if(cmd.ExecuteNonQuery()>0)
+                if (cmd.ExecuteNonQuery() > 0)
                     return true;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
 
             }
@@ -91,7 +131,7 @@ namespace DAL_QLBH
             }
             return false;
         }
-        public bool UpdateMatKhau(string email,string mkCu, string mkMoi)
+        public bool UpdateMatKhau(string email, string mkCu, string mkMoi)
         {
             try
             {
@@ -111,26 +151,6 @@ namespace DAL_QLBH
                 _con.Close();
             }
             return false;
-        }
-        public DataTable VaiTroNhanVien(string email)
-        {
-            try
-            {
-                _con.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "VaiTroNV";
-                cmd.Parameters.AddWithValue("email", email);
-                cmd.Connection = _con;
-                DataTable dtNhanVien = new DataTable();
-                dtNhanVien = new DataTable();
-                dtNhanVien.Load(cmd.ExecuteReader());
-                return dtNhanVien;
-            }
-            finally
-            {
-                _con.Close();
-            }
         }
         public bool InsertNhanVien(DTO_Nhanvien nv)
         {
@@ -154,25 +174,6 @@ namespace DAL_QLBH
                 _con.Close();
             }
             return false;
-        }
-        public DataTable SearchNhanVien(string tenNv)
-        {
-            try
-            {
-                _con.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = _con;
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "[sp_SearchNhanVien]";
-                cmd.Parameters.AddWithValue("tenNV", tenNv);
-                DataTable dtNhanVien = new DataTable();
-                dtNhanVien.Load(cmd.ExecuteReader());
-                return dtNhanVien;
-            }
-            finally
-            {
-                _con.Close();
-            }
         }
         public bool UpdateNhanVien(DTO_Nhanvien nv)
         {

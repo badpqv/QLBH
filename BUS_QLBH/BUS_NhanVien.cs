@@ -67,6 +67,5 @@ namespace BUS_QLBH
         {
             return dalNhanVien.SearchNhanVien(tenNv);
         }
-
     }
 }

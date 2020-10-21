@@ -20,6 +20,7 @@ namespace QLBH
         public static int session = 0;
         public static int profile = 0;
         public static string email = "";
+
         Thread th;
         public frmMain_QLBH()
         {
@@ -30,15 +31,13 @@ namespace QLBH
        
         private void frmMain_QLBH_Load(object sender, EventArgs e)
         {
-            
-            
             ResetValue();
             if (profile == 1)
             {
                 hồSơNhânViênToolStripMenuItem.Visible = false;
                 profile = 0;
             }
-            
+          
         }
         private void ResetValue()
         {
@@ -122,8 +121,11 @@ namespace QLBH
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             session = 0;
-            dn.vaitro = 0;
             ResetValue();
+           foreach(Form f in this.MdiChildren)
+            {
+                f.Close();
+            }
         }
 
         private void hồSơNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
