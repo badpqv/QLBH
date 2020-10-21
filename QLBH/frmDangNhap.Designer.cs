@@ -1,4 +1,6 @@
-﻿namespace QLBH
+﻿using System.ComponentModel;
+
+namespace QLBH
 {
     partial class frmDangNhap
     {
@@ -34,7 +36,7 @@
             this.txt_pass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbox_remember = new System.Windows.Forms.CheckBox();
             this.btn_dangnhap = new System.Windows.Forms.Button();
             this.btn_thoat = new System.Windows.Forms.Button();
             this.btn_quenmk = new System.Windows.Forms.Button();
@@ -99,18 +101,18 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Mật khẩu";
             // 
-            // checkBox1
+            // cbox_remember
             // 
-            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.Gray;
-            this.checkBox1.Location = new System.Drawing.Point(6, 294);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(176, 28);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Ghi nhớ tài khoản";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbox_remember.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbox_remember.AutoSize = true;
+            this.cbox_remember.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_remember.ForeColor = System.Drawing.Color.Gray;
+            this.cbox_remember.Location = new System.Drawing.Point(6, 294);
+            this.cbox_remember.Name = "cbox_remember";
+            this.cbox_remember.Size = new System.Drawing.Size(176, 28);
+            this.cbox_remember.TabIndex = 5;
+            this.cbox_remember.Text = "Ghi nhớ tài khoản";
+            this.cbox_remember.UseVisualStyleBackColor = true;
             // 
             // btn_dangnhap
             // 
@@ -161,6 +163,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::QLBH.Properties.Resources._1043619_200;
             this.pictureBox1.Location = new System.Drawing.Point(146, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -180,7 +183,7 @@
             this.Controls.Add(this.btn_quenmk);
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.btn_dangnhap);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.cbox_remember);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_pass);
@@ -200,17 +203,18 @@
         }
 
         #endregion
-
+      
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_emailnv;
         private System.Windows.Forms.TextBox txt_pass;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cbox_remember;
         private System.Windows.Forms.Button btn_dangnhap;
         private System.Windows.Forms.Button btn_thoat;
         private System.Windows.Forms.Button btn_quenmk;
         private System.Windows.Forms.PictureBox pictureBox1;
+
     }
 }
 

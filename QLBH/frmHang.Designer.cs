@@ -361,6 +361,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmHang";
             this.Load += new System.EventHandler(this.frmHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_hang)).EndInit();

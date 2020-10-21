@@ -52,6 +52,7 @@ namespace QLBH
                 {
                     VaiTroNV();
                 }
+                this.Text = "frmMain_QLBH   EmailNv: " + email;
             }
             else
             {
@@ -62,6 +63,7 @@ namespace QLBH
                 thốngKêSảnPhẩmToolStripMenuItem.Visible = false;
                 hồSơNhânViênToolStripMenuItem.Visible = false;
                 đăngNhậpToolStripMenuItem.Enabled = true;
+                this.Text = "frmMain_QLBH";
             }
         }
         private void VaiTroNV()
@@ -100,7 +102,6 @@ namespace QLBH
             if (!CheckExistForm(dn.Name))
             {
                 dn.MdiParent = this;
-                dn.TopMost = true;
                 dn.Show();
                 dn.FormClosed += new FormClosedEventHandler(frmDangNhap_FormClosed);
             }

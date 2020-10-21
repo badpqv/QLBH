@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using BUS_QLBH;
 using System.Net.Mail;
 using System.Net;
+using QLBH.Properties;
 
 namespace QLBH
 {
@@ -22,39 +23,46 @@ namespace QLBH
         public frmDangNhap()
         {
             InitializeComponent();
-            this.BringToFront();
+            this.TopLevel = true;
+            this.TopMost = true;
         }
         private void frmDangNhap_Load(object sender, EventArgs e)
         {
             frmMain_QLBH.session = 0;
+            txt_emailnv.Text = Settings.Default.emailNv;
+            txt_pass.Text = Settings.Default.passWord;
+            cbox_remember.Checked = Settings.Default.isRemember;
         }
-        public string encryption(string pwd)
-        {
-            MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
-            byte[] encrypt;
-            UTF8Encoding encode = new UTF8Encoding();
-            encrypt = md5.ComputeHash(encode.GetBytes(pwd));
-            StringBuilder encryptdata = new StringBuilder();
-            for (int i = 0; i < encrypt.Length; i++)
-            {
-                encryptdata.Append(encrypt[i].ToString());
-            }
-            return encryptdata.ToString();
-        }
+       
         private void btn_dangnhap_Click(object sender, EventArgs e)
         {
             DTO_Nhanvien nv = new DTO_Nhanvien();
             nv.EmailNv = txt_emailnv.Text;
             nv.MatKhau = busNhanVien.encryption(txt_pass.Text);
+          
             if (busNhanVien.NhanVienDangNhap(nv))
             {
                 frmMain_QLBH.session = 1;
                 frmMain_QLBH.email = txt_emailnv.Text;
                 DataTable dt = busNhanVien.VaiTroNhanVien(nv.EmailNv);
                 vaitro = Convert.ToInt32(dt.Rows[0][0].ToString());
-                
                 MessageBox.Show("Đăng nhập thành công");
+                if (cbox_remember.Checked)
+                {
+                    Settings.Default.emailNv = txt_emailnv.Text;
+                    Settings.Default.passWord = txt_pass.Text;
+                    Settings.Default.isRemember = true;
+                    Settings.Default.Save();
+                }
+                if (!cbox_remember.Checked)
+                {
+                    Settings.Default.emailNv = "";
+                    Settings.Default.passWord = "";
+                    Settings.Default.isRemember = false;
+                    Settings.Default.Save();
+                }
                 this.Close();
+               
             }
             else
             {
@@ -75,7 +83,7 @@ namespace QLBH
                     builder.Append(RandomString(4, true));
                     builder.Append(RandomNumber(1000, 9999));
                     builder.Append(RandomString(2, false));
-                    string matkhaumoi = encryption(builder.ToString());
+                    string matkhaumoi = busNhanVien.encryption(builder.ToString());
                     busNhanVien.TaoMatKhau(txt_emailnv.Text, matkhaumoi);
                     SendEmail(txt_emailnv.Text, matkhaumoi);
                 }
