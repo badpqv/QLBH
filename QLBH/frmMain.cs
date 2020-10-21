@@ -30,6 +30,8 @@ namespace QLBH
        
         private void frmMain_QLBH_Load(object sender, EventArgs e)
         {
+            
+            
             ResetValue();
             if (profile == 1)
             {

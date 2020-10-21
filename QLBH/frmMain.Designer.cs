@@ -153,7 +153,7 @@
             // 
             this.thốngKêSảnPhẩmToolStripMenuItem.Image = global::QLBH.Properties.Resources.analytics;
             this.thốngKêSảnPhẩmToolStripMenuItem.Name = "thốngKêSảnPhẩmToolStripMenuItem";
-            this.thốngKêSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.thốngKêSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.thốngKêSảnPhẩmToolStripMenuItem.Text = "Thống kê sản phẩm";
             this.thốngKêSảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.thốngKêSảnPhẩmToolStripMenuItem_Click);
             // 

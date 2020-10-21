@@ -47,6 +47,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Poly.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>QLBH.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -179,6 +186,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>DuAnMau.mdf</DependentUpon>
     </Content>
+    <Content Include="Poly.ico" />
     <None Include="Resources\loupe.png" />
     <None Include="Resources\listing-option.png" />
     <None Include="Resources\next.png" />
