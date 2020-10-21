@@ -99,7 +99,7 @@ namespace QLBH
         }
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
              dn = new frmDangNhap();
             if (!CheckExistForm(dn.Name))
             {
