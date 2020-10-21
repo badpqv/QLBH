@@ -176,7 +176,7 @@ namespace QLBH
 
         private void hướngDẫnSữDụngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start("www.fb.com/whiten5ko");
+            Process.Start("www.facebook.com/photo?fbid=825473581324374&set=a.104845840053822");
         }
 
         private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)

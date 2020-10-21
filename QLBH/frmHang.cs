@@ -40,6 +40,7 @@ namespace QLBH
             }
             btn_update.Enabled = false;
             btn_xoa.Enabled = false;
+            btn_luu.Enabled = true;
             pbox_hinhanh.Image = null;
         }
         private void frmHang_Load(object sender, EventArgs e)
@@ -53,6 +54,7 @@ namespace QLBH
             DataGridViewRow row = dgv_hang.Rows[e.RowIndex];
             btn_update.Enabled = true;
             btn_xoa.Enabled = true;
+            btn_luu.Enabled = false;
             string saveDirectory = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
             txt_mahang.Text = row.Cells[0].Value.ToString();
             txt_tenhang.Text = row.Cells[1].Value.ToString();

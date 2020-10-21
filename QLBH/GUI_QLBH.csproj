@@ -179,6 +179,13 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>DuAnMau.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\loupe.png" />
+    <None Include="Resources\listing-option.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\floppy-disk.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\pencil.png" />
+    <None Include="Resources\plus.png" />
     <None Include="Resources\man.png" />
     <None Include="Resources\1043619-200.png" />
     <None Include="Resources\file.png" />

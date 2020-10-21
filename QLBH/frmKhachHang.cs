@@ -22,12 +22,12 @@ namespace QLBH
         }
         private void LoadGridView_Khach()
         {
-            dataGridView1.DataSource = busKhach.getKhach();
-            dataGridView1.Columns[0].HeaderText = "Điện thoại";
-            dataGridView1.Columns[1].HeaderText = "Tên khách";
-            dataGridView1.Columns[2].HeaderText = "Địa chỉ";
-            dataGridView1.Columns[3].Visible = false;
-            dataGridView1.Columns[4].HeaderText = "Giới tính";
+            dgv_khachhang.DataSource = busKhach.getKhach();
+            dgv_khachhang.Columns[0].HeaderText = "Điện thoại";
+            dgv_khachhang.Columns[1].HeaderText = "Tên khách";
+            dgv_khachhang.Columns[2].HeaderText = "Địa chỉ";
+            dgv_khachhang.Columns[3].Visible = false;
+            dgv_khachhang.Columns[4].HeaderText = "Giới tính";
         }
         private void ResetValues()
         {
@@ -99,7 +99,7 @@ namespace QLBH
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+            DataGridViewRow row = dgv_khachhang.Rows[e.RowIndex];
             btn_update.Enabled = true;
             btn_xoa.Enabled = true;
             btn_luu.Enabled = false;
@@ -209,6 +209,38 @@ namespace QLBH
                 {
                     ResetValues();
                 }
+            }
+        }
+
+        private void btn_timkiem_Click(object sender, EventArgs e)
+        {
+            if(txt_timkiem.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Nhập tên khách cần tìm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txt_timkiem.Focus();
+                return;
+            }
+            else
+            {
+              dgv_khachhang.DataSource =   busKhach.SearchKhach(txt_timkiem.Text);
+            }
+        }
+
+        private void txt_timkiem_Enter(object sender, EventArgs e)
+        {
+            if(txt_timkiem.Text == "Nhập tên khách")
+            {
+                txt_timkiem.ForeColor = Color.Black;
+                txt_timkiem.Text = "";
+            }
+        }
+
+        private void txt_timkiem_Leave(object sender, EventArgs e)
+        {
+            if (txt_timkiem.Text == "")
+            {
+                txt_timkiem.ForeColor = Color.Silver;
+                txt_timkiem.Text = "Nhập tên khách";
             }
         }
     }
