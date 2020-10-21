@@ -147,6 +147,7 @@
             this.thốngKêSảnPhẩmToolStripMenuItem.Name = "thốngKêSảnPhẩmToolStripMenuItem";
             this.thốngKêSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.thốngKêSảnPhẩmToolStripMenuItem.Text = "Thống kê sản phẩm";
+            this.thốngKêSảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.thốngKêSảnPhẩmToolStripMenuItem_Click);
             // 
             // báoCáoToolStripMenuItem
             // 
@@ -169,15 +170,17 @@
             this.giớiThiệuPhầnMềmToolStripMenuItem.Name = "giớiThiệuPhầnMềmToolStripMenuItem";
             this.giớiThiệuPhầnMềmToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.giớiThiệuPhầnMềmToolStripMenuItem.Text = "Giới thiệu phần mềm";
+            this.giớiThiệuPhầnMềmToolStripMenuItem.Click += new System.EventHandler(this.giớiThiệuPhầnMềmToolStripMenuItem_Click);
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(206, 37);
+            this.label1.Location = new System.Drawing.Point(218, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(664, 39);
             this.label1.TabIndex = 3;
@@ -188,10 +191,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::QLBH.Properties.Resources._18198154_10208600482868814_3469513_n;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1084, 661);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain_QLBH";

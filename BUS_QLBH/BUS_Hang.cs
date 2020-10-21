@@ -32,5 +32,13 @@ namespace BUS_QLBH
         {
             return dalHang.SearchHang(maHang);
         }
+        public DataTable ThongKeHang()
+        {
+            return dalHang.ThongKeHang();
+        }
+        public DataTable ThongKeTonKho()
+        {
+            return dalHang.ThongKeTonKho();
+        }
     }
 }

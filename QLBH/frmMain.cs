@@ -23,8 +23,8 @@ namespace QLBH
         public frmMain_QLBH()
         {
             InitializeComponent();
-           
-
+            this.BackgroundImage = this.BackgroundImage;
+            
         }
        
         private void frmMain_QLBH_Load(object sender, EventArgs e)
@@ -35,12 +35,13 @@ namespace QLBH
                 hồSơNhânViênToolStripMenuItem.Visible = false;
                 profile = 0;
             }
+            
         }
         private void ResetValue()
         {
             if(session == 1)
             {
-                nhânViênToolStripMenuItem.Enabled = true;
+                nhânViênToolStripMenuItem.Visible = true;
                 danhMụcToolStripMenuItem.Visible = true;
                 đăngXuấtToolStripMenuItem.Enabled = true;
                 thốngKêToolStripMenuItem.Visible = true;
@@ -54,7 +55,7 @@ namespace QLBH
             }
             else
             {
-                nhânViênToolStripMenuItem.Enabled = false;
+                nhânViênToolStripMenuItem.Visible = false;
                 danhMụcToolStripMenuItem.Visible = false;
                 đăngXuấtToolStripMenuItem.Enabled = false;
                 thốngKêToolStripMenuItem.Visible = false;
@@ -94,6 +95,7 @@ namespace QLBH
         }
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
              dn = new frmDangNhap();
             if (!CheckExistForm(dn.Name))
             {
@@ -116,6 +118,7 @@ namespace QLBH
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             session = 0;
+            dn.vaitro = 0;
             ResetValue();
         }
 
@@ -192,6 +195,25 @@ namespace QLBH
         private void frmMain_QLBH_MdiChildActivate(object sender, EventArgs e)
         {
 
+        }
+
+        private void thốngKêSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmThongke frmThongke = new frmThongke();
+            if (!CheckExistForm(frmThongke.Name))
+            {
+                frmThongke.MdiParent = this;
+                frmThongke.Show();
+            }
+            else
+            {
+                ActiveChildForm(frmThongke.Name);
+            }
+        }
+
+        private void giớiThiệuPhầnMềmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start(Application.StartupPath + "\\SOF205_Project document.docx");
         }
     }
 }

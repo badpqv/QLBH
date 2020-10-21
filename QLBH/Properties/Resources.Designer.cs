@@ -63,6 +63,26 @@ namespace QLBH.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _18198154_10208600482868814_3469513_n {
+            get {
+                object obj = ResourceManager.GetObject("18198154_10208600482868814_3469513_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _18198154_10208600482868814_3469513_n1 {
+            get {
+                object obj = ResourceManager.GetObject("18198154_10208600482868814_3469513_n1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gearvn_Girls_Frontline___1_ {
             get {
                 object obj = ResourceManager.GetObject("Gearvn_Girls Frontline_ (1)", resourceCulture);

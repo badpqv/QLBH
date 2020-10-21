@@ -52,6 +52,7 @@ namespace QLBH
                 frmMain_QLBH.email = txt_emailnv.Text;
                 DataTable dt = busNhanVien.VaiTroNhanVien(nv.EmailNv);
                 vaitro = Convert.ToInt32(dt.Rows[0][0].ToString());
+                
                 MessageBox.Show("Đăng nhập thành công");
                 this.Close();
             }
