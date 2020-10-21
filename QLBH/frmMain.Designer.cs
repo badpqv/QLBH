@@ -74,6 +74,7 @@
             // 
             // đăngNhậpToolStripMenuItem
             // 
+            this.đăngNhậpToolStripMenuItem.Image = global::QLBH.Properties.Resources.user;
             this.đăngNhậpToolStripMenuItem.Name = "đăngNhậpToolStripMenuItem";
             this.đăngNhậpToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
             this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
@@ -82,6 +83,7 @@
             // 
             // đăngXuấtToolStripMenuItem
             // 
+            this.đăngXuấtToolStripMenuItem.Image = global::QLBH.Properties.Resources.log_out;
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
             this.đăngXuấtToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
             this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
@@ -90,6 +92,7 @@
             // 
             // hồSơNhânViênToolStripMenuItem
             // 
+            this.hồSơNhânViênToolStripMenuItem.Image = global::QLBH.Properties.Resources.profile;
             this.hồSơNhânViênToolStripMenuItem.Name = "hồSơNhânViênToolStripMenuItem";
             this.hồSơNhânViênToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
             this.hồSơNhânViênToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
@@ -98,6 +101,7 @@
             // 
             // thoátToolStripMenuItem
             // 
+            this.thoátToolStripMenuItem.Image = global::QLBH.Properties.Resources.exit;
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
             this.thoátToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F4)));
             this.thoátToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
@@ -116,6 +120,7 @@
             // 
             // sảnPhẩmToolStripMenuItem
             // 
+            this.sảnPhẩmToolStripMenuItem.Image = global::QLBH.Properties.Resources.box;
             this.sảnPhẩmToolStripMenuItem.Name = "sảnPhẩmToolStripMenuItem";
             this.sảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.sảnPhẩmToolStripMenuItem.Text = "Sản phẩm";
@@ -123,6 +128,7 @@
             // 
             // nhânViênToolStripMenuItem
             // 
+            this.nhânViênToolStripMenuItem.Image = global::QLBH.Properties.Resources.teamwork;
             this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
             this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.nhânViênToolStripMenuItem.Text = "Nhân viên";
@@ -130,6 +136,7 @@
             // 
             // kháchHàngToolStripMenuItem
             // 
+            this.kháchHàngToolStripMenuItem.Image = global::QLBH.Properties.Resources.customer_review;
             this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
             this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.kháchHàngToolStripMenuItem.Text = "Khách hàng";
@@ -145,6 +152,7 @@
             // 
             // thốngKêSảnPhẩmToolStripMenuItem
             // 
+            this.thốngKêSảnPhẩmToolStripMenuItem.Image = global::QLBH.Properties.Resources.analytics;
             this.thốngKêSảnPhẩmToolStripMenuItem.Name = "thốngKêSảnPhẩmToolStripMenuItem";
             this.thốngKêSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.thốngKêSảnPhẩmToolStripMenuItem.Text = "Thống kê sản phẩm";
@@ -161,6 +169,7 @@
             // 
             // hướngDẫnSữDụngToolStripMenuItem
             // 
+            this.hướngDẫnSữDụngToolStripMenuItem.Image = global::QLBH.Properties.Resources.instructions;
             this.hướngDẫnSữDụngToolStripMenuItem.Name = "hướngDẫnSữDụngToolStripMenuItem";
             this.hướngDẫnSữDụngToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.hướngDẫnSữDụngToolStripMenuItem.Text = "Hướng dẫn sữ dụng";
@@ -168,6 +177,7 @@
             // 
             // giớiThiệuPhầnMềmToolStripMenuItem
             // 
+            this.giớiThiệuPhầnMềmToolStripMenuItem.Image = global::QLBH.Properties.Resources.file;
             this.giớiThiệuPhầnMềmToolStripMenuItem.Name = "giớiThiệuPhầnMềmToolStripMenuItem";
             this.giớiThiệuPhầnMềmToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.giớiThiệuPhầnMềmToolStripMenuItem.Text = "Giới thiệu phần mềm";

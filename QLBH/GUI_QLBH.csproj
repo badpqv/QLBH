@@ -179,6 +179,16 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>DuAnMau.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\file.png" />
+    <None Include="Resources\instructions.png" />
+    <None Include="Resources\analytics.png" />
+    <None Include="Resources\customer-review.png" />
+    <None Include="Resources\teamwork.png" />
+    <None Include="Resources\box.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\profile.png" />
+    <None Include="Resources\log-out.png" />
+    <None Include="Resources\user.png" />
     <None Include="Resources\18198154_10208600482868814_3469513_n1.png" />
     <None Include="Resources\18198154_10208600482868814_3469513_n.png" />
     <None Include="Resources\Gearvn_Girls Frontline_ %281%29.jpg" />
