@@ -63,6 +63,16 @@ namespace QLBH.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1043619_200 {
+            get {
+                object obj = ResourceManager.GetObject("1043619-200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _18198154_10208600482868814_3469513_n {
             get {
                 object obj = ResourceManager.GetObject("18198154_10208600482868814_3469513_n", resourceCulture);
@@ -156,6 +166,16 @@ namespace QLBH.Properties {
         internal static System.Drawing.Bitmap log_out {
             get {
                 object obj = ResourceManager.GetObject("log-out", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap man {
+            get {
+                object obj = ResourceManager.GetObject("man", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

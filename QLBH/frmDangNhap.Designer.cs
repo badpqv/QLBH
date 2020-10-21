@@ -38,6 +38,8 @@
             this.btn_dangnhap = new System.Windows.Forms.Button();
             this.btn_thoat = new System.Windows.Forms.Button();
             this.btn_quenmk = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -157,6 +159,16 @@
             this.btn_quenmk.UseVisualStyleBackColor = false;
             this.btn_quenmk.Click += new System.EventHandler(this.btn_quenmk_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QLBH.Properties.Resources._1043619_200;
+            this.pictureBox1.Location = new System.Drawing.Point(146, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmDangNhap
             // 
             this.AcceptButton = this.btn_dangnhap;
@@ -164,6 +176,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(364, 451);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_quenmk);
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.btn_dangnhap);
@@ -180,6 +193,7 @@
             this.Text = "Formdangnhap - QLBH";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.frmDangNhap_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,6 +210,7 @@
         private System.Windows.Forms.Button btn_dangnhap;
         private System.Windows.Forms.Button btn_thoat;
         private System.Windows.Forms.Button btn_quenmk;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

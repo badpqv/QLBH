@@ -179,6 +179,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>DuAnMau.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\man.png" />
+    <None Include="Resources\1043619-200.png" />
     <None Include="Resources\file.png" />
     <None Include="Resources\instructions.png" />
     <None Include="Resources\analytics.png" />
