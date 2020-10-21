@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHang));
             this.label1 = new System.Windows.Forms.Label();
             this.txt_mahang = new System.Windows.Forms.TextBox();
             this.txt_tenhang = new System.Windows.Forms.TextBox();
@@ -358,6 +359,7 @@
             this.Controls.Add(this.txt_tenhang);
             this.Controls.Add(this.txt_mahang);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmHang";
             this.Text = "frmHang";
             this.Load += new System.EventHandler(this.frmHang_Load);

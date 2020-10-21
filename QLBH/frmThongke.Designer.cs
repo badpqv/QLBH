@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThongke));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dgv_nhapkho = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dgv_tonkho = new System.Windows.Forms.DataGridView();
-            this.dgv_nhapkho = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_nhapkho)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_tonkho)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_nhapkho)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -61,6 +62,14 @@
             this.tabPage1.Text = "Sản phẩm nhập kho";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // dgv_nhapkho
+            // 
+            this.dgv_nhapkho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_nhapkho.Location = new System.Drawing.Point(4, 4);
+            this.dgv_nhapkho.Name = "dgv_nhapkho";
+            this.dgv_nhapkho.Size = new System.Drawing.Size(758, 294);
+            this.dgv_nhapkho.TabIndex = 1;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.dgv_tonkho);
@@ -80,28 +89,21 @@
             this.dgv_tonkho.Size = new System.Drawing.Size(758, 294);
             this.dgv_tonkho.TabIndex = 0;
             // 
-            // dgv_nhapkho
-            // 
-            this.dgv_nhapkho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_nhapkho.Location = new System.Drawing.Point(4, 4);
-            this.dgv_nhapkho.Name = "dgv_nhapkho";
-            this.dgv_nhapkho.Size = new System.Drawing.Size(758, 294);
-            this.dgv_nhapkho.TabIndex = 1;
-            // 
             // frmThongke
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 376);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmThongke";
             this.Text = "frmThongke";
             this.Load += new System.EventHandler(this.frmThongke_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_nhapkho)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_tonkho)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_nhapkho)).EndInit();
             this.ResumeLayout(false);
 
         }

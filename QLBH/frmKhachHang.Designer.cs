@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmKhachHang));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txt_timkiem = new System.Windows.Forms.TextBox();
             this.btn_timkiem = new System.Windows.Forms.Button();
@@ -264,6 +265,7 @@
             this.Controls.Add(this.btn_timkiem);
             this.Controls.Add(this.txt_timkiem);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmKhachHang";
             this.Text = "frmKhachHang";
             this.TopMost = true;

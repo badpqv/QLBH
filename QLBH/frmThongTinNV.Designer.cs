@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThongTinNV));
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_passcu = new System.Windows.Forms.TextBox();
@@ -147,6 +148,7 @@
             this.btn_thoat.TabIndex = 14;
             this.btn_thoat.Text = "Thoát";
             this.btn_thoat.UseVisualStyleBackColor = false;
+            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
             // 
             // btn_doimatkhau
             // 
@@ -179,6 +181,7 @@
             // 
             // frmThongTinNV
             // 
+            this.AcceptButton = this.btn_doimatkhau;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
@@ -194,8 +197,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_passcu);
             this.Controls.Add(this.txt_emailnv);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmThongTinNV";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmThongTinNV";
             this.TopMost = true;
             this.ResumeLayout(false);
