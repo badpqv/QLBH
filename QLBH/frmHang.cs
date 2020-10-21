@@ -51,20 +51,23 @@ namespace QLBH
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow row = dgv_hang.Rows[e.RowIndex];
-            btn_update.Enabled = true;
-            btn_xoa.Enabled = true;
-            btn_luu.Enabled = false;
-            string saveDirectory = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
-            txt_mahang.Text = row.Cells[0].Value.ToString();
-            txt_tenhang.Text = row.Cells[1].Value.ToString();
-            txt_soluong.Text = row.Cells[2].Value.ToString();
-            txt_gianhap.Text = row.Cells[3].Value.ToString();
-            txt_giaban.Text = row.Cells[4].Value.ToString();
-            txt_hinh.Text = row.Cells[5].Value.ToString();
-            checkUrlImage = txt_hinh.Text;
-            txt_ghichu.Text = row.Cells[6].Value.ToString();
-            pbox_hinhanh.Image = Image.FromFile(saveDirectory+row.Cells[5].Value.ToString()) ;
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgv_hang.Rows[e.RowIndex];
+                btn_update.Enabled = true;
+                btn_xoa.Enabled = true;
+                btn_luu.Enabled = false;
+                string saveDirectory = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
+                txt_mahang.Text = row.Cells[0].Value.ToString();
+                txt_tenhang.Text = row.Cells[1].Value.ToString();
+                txt_soluong.Text = row.Cells[2].Value.ToString();
+                txt_gianhap.Text = row.Cells[3].Value.ToString();
+                txt_giaban.Text = row.Cells[4].Value.ToString();
+                txt_hinh.Text = row.Cells[5].Value.ToString();
+                checkUrlImage = txt_hinh.Text;
+                txt_ghichu.Text = row.Cells[6].Value.ToString();
+                pbox_hinhanh.Image = Image.FromFile(saveDirectory + row.Cells[5].Value.ToString());
+            }
         }
 
         private void btn_mohinh_Click(object sender, EventArgs e)

@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.ExceptionServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,6 +29,10 @@ namespace QLBH
             dgv_khachhang.Columns[2].HeaderText = "Địa chỉ";
             dgv_khachhang.Columns[3].Visible = false;
             dgv_khachhang.Columns[4].HeaderText = "Giới tính";
+            for(int i = 0; i < dgv_khachhang.Columns.Count; i++)
+            {
+                dgv_khachhang.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            }
         }
         private void ResetValues()
         {
@@ -99,21 +104,25 @@ namespace QLBH
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow row = dgv_khachhang.Rows[e.RowIndex];
-            btn_update.Enabled = true;
-            btn_xoa.Enabled = true;
-            btn_luu.Enabled = false;
-            txt_diachi.Text = row.Cells[2].Value.ToString();
-            txt_tenkhach.Text = row.Cells[1].Value.ToString();
-            txt_sdt.Text = row.Cells[0].Value.ToString();
-            if(row.Cells[4].Value.ToString() == "Nam")
+            if (e.RowIndex >= 0)
             {
-                rad_nam.Checked = true;
+                DataGridViewRow row = dgv_khachhang.Rows[e.RowIndex];
+                btn_update.Enabled = true;
+                btn_xoa.Enabled = true;
+                btn_luu.Enabled = false;
+                txt_diachi.Text = row.Cells[2].Value.ToString();
+                txt_tenkhach.Text = row.Cells[1].Value.ToString();
+                txt_sdt.Text = row.Cells[0].Value.ToString();
+                if (row.Cells[4].Value.ToString() == "Nam")
+                {
+                    rad_nam.Checked = true;
+                }
+                else
+                {
+                    rad_nu.Checked = true;
+                }
             }
-            else
-            {
-                rad_nu.Checked = true;
-            }
+         
         }
 
         private void btn_them_Click(object sender, EventArgs e)

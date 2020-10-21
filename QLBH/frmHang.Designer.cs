@@ -62,6 +62,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
@@ -73,6 +74,7 @@
             // 
             // txt_mahang
             // 
+            this.txt_mahang.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_mahang.Enabled = false;
             this.txt_mahang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_mahang.Location = new System.Drawing.Point(120, 87);
@@ -82,6 +84,7 @@
             // 
             // txt_tenhang
             // 
+            this.txt_tenhang.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_tenhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tenhang.Location = new System.Drawing.Point(120, 119);
             this.txt_tenhang.Name = "txt_tenhang";
@@ -90,6 +93,7 @@
             // 
             // txt_soluong
             // 
+            this.txt_soluong.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_soluong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_soluong.Location = new System.Drawing.Point(120, 151);
             this.txt_soluong.Name = "txt_soluong";
@@ -98,6 +102,7 @@
             // 
             // txt_gianhap
             // 
+            this.txt_gianhap.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_gianhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_gianhap.Location = new System.Drawing.Point(120, 183);
             this.txt_gianhap.Name = "txt_gianhap";
@@ -106,6 +111,7 @@
             // 
             // txt_giaban
             // 
+            this.txt_giaban.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_giaban.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_giaban.Location = new System.Drawing.Point(120, 215);
             this.txt_giaban.Name = "txt_giaban";
@@ -114,6 +120,7 @@
             // 
             // txt_hinh
             // 
+            this.txt_hinh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_hinh.Enabled = false;
             this.txt_hinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_hinh.Location = new System.Drawing.Point(423, 87);
@@ -124,6 +131,7 @@
             // 
             // txt_ghichu
             // 
+            this.txt_ghichu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_ghichu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ghichu.Location = new System.Drawing.Point(423, 151);
             this.txt_ghichu.Multiline = true;
@@ -133,6 +141,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
@@ -144,6 +153,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Blue;
@@ -155,6 +165,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Blue;
@@ -166,6 +177,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Blue;
@@ -177,6 +189,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Blue;
@@ -188,6 +201,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Blue;
@@ -199,6 +213,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Blue;
@@ -210,6 +225,7 @@
             // 
             // btn_mohinh
             // 
+            this.btn_mohinh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_mohinh.Location = new System.Drawing.Point(544, 87);
             this.btn_mohinh.Name = "btn_mohinh";
             this.btn_mohinh.Size = new System.Drawing.Size(101, 23);
@@ -220,6 +236,9 @@
             // 
             // dgv_hang
             // 
+            this.dgv_hang.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_hang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_hang.Location = new System.Drawing.Point(12, 269);
             this.dgv_hang.Name = "dgv_hang";
@@ -229,6 +248,7 @@
             // 
             // txt_timkiem
             // 
+            this.txt_timkiem.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.txt_timkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_timkiem.ForeColor = System.Drawing.Color.Silver;
             this.txt_timkiem.Location = new System.Drawing.Point(581, 449);
@@ -241,6 +261,7 @@
             // 
             // btn_timkiem
             // 
+            this.btn_timkiem.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_timkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_timkiem.Image = global::QLBH.Properties.Resources.loupe;
             this.btn_timkiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -255,6 +276,7 @@
             // 
             // btn_update
             // 
+            this.btn_update.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_update.Image = global::QLBH.Properties.Resources.pencil;
             this.btn_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -269,6 +291,7 @@
             // 
             // btn_luu
             // 
+            this.btn_luu.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_luu.Image = global::QLBH.Properties.Resources.floppy_disk;
             this.btn_luu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -283,6 +306,7 @@
             // 
             // btn_boqua
             // 
+            this.btn_boqua.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_boqua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_boqua.Image = global::QLBH.Properties.Resources.next;
             this.btn_boqua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -296,6 +320,7 @@
             // 
             // btn_danhsach
             // 
+            this.btn_danhsach.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_danhsach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_danhsach.Image = global::QLBH.Properties.Resources.listing_option;
             this.btn_danhsach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -310,6 +335,7 @@
             // 
             // btn_thoat
             // 
+            this.btn_thoat.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_thoat.Image = global::QLBH.Properties.Resources.exit;
             this.btn_thoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -324,6 +350,7 @@
             // 
             // btn_xoa
             // 
+            this.btn_xoa.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_xoa.Image = global::QLBH.Properties.Resources.delete;
             this.btn_xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -338,6 +365,7 @@
             // 
             // btn_them
             // 
+            this.btn_them.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_them.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_them.Image = global::QLBH.Properties.Resources.plus;
             this.btn_them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -352,6 +380,7 @@
             // 
             // pbox_hinhanh
             // 
+            this.pbox_hinhanh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pbox_hinhanh.Location = new System.Drawing.Point(721, 93);
             this.pbox_hinhanh.Name = "pbox_hinhanh";
             this.pbox_hinhanh.Size = new System.Drawing.Size(156, 148);

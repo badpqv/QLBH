@@ -59,6 +59,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 88);
@@ -69,6 +70,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 127);
@@ -79,6 +81,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(411, 82);
@@ -89,6 +92,7 @@
             // 
             // txt_emailnv
             // 
+            this.txt_emailnv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_emailnv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_emailnv.Location = new System.Drawing.Point(142, 82);
             this.txt_emailnv.Name = "txt_emailnv";
@@ -97,6 +101,7 @@
             // 
             // txt_tennv
             // 
+            this.txt_tennv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_tennv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tennv.Location = new System.Drawing.Point(142, 121);
             this.txt_tennv.Name = "txt_tennv";
@@ -105,6 +110,7 @@
             // 
             // txt_diachi
             // 
+            this.txt_diachi.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_diachi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_diachi.Location = new System.Drawing.Point(478, 82);
             this.txt_diachi.Multiline = true;
@@ -114,6 +120,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(12, 159);
@@ -124,6 +131,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(399, 159);
@@ -134,6 +142,7 @@
             // 
             // rad_ngunghd
             // 
+            this.rad_ngunghd.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rad_ngunghd.AutoSize = true;
             this.rad_ngunghd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rad_ngunghd.ForeColor = System.Drawing.SystemColors.InfoText;
@@ -147,6 +156,7 @@
             // 
             // rad_hd
             // 
+            this.rad_hd.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rad_hd.AutoSize = true;
             this.rad_hd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rad_hd.ForeColor = System.Drawing.SystemColors.InfoText;
@@ -160,6 +170,9 @@
             // 
             // dg_NhanVien
             // 
+            this.dg_NhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dg_NhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_NhanVien.Location = new System.Drawing.Point(-1, 196);
             this.dg_NhanVien.Name = "dg_NhanVien";
@@ -169,11 +182,12 @@
             // 
             // txt_timkiem
             // 
+            this.txt_timkiem.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.txt_timkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_timkiem.ForeColor = System.Drawing.Color.Silver;
-            this.txt_timkiem.Location = new System.Drawing.Point(190, 384);
+            this.txt_timkiem.Location = new System.Drawing.Point(466, 400);
             this.txt_timkiem.Name = "txt_timkiem";
-            this.txt_timkiem.Size = new System.Drawing.Size(234, 26);
+            this.txt_timkiem.Size = new System.Drawing.Size(216, 26);
             this.txt_timkiem.TabIndex = 13;
             this.txt_timkiem.Text = "Tìm kiếm nhân viên";
             this.txt_timkiem.Enter += new System.EventHandler(this.txt_timkiem_Enter);
@@ -181,93 +195,132 @@
             // 
             // btn_timkiem
             // 
+            this.btn_timkiem.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_timkiem.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btn_timkiem.Location = new System.Drawing.Point(430, 374);
+            this.btn_timkiem.Image = global::QLBH.Properties.Resources.loupe;
+            this.btn_timkiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_timkiem.Location = new System.Drawing.Point(688, 382);
             this.btn_timkiem.Name = "btn_timkiem";
-            this.btn_timkiem.Size = new System.Drawing.Size(89, 36);
+            this.btn_timkiem.Size = new System.Drawing.Size(99, 46);
             this.btn_timkiem.TabIndex = 14;
             this.btn_timkiem.Text = "Tìm kiếm";
+            this.btn_timkiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_timkiem.UseVisualStyleBackColor = true;
             this.btn_timkiem.Click += new System.EventHandler(this.btn_timkiem_Click);
             // 
             // btn_them
             // 
+            this.btn_them.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_them.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_them.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btn_them.Location = new System.Drawing.Point(16, 428);
+            this.btn_them.Image = global::QLBH.Properties.Resources.plus;
+            this.btn_them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_them.Location = new System.Drawing.Point(12, 432);
             this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(89, 36);
+            this.btn_them.Size = new System.Drawing.Size(90, 50);
             this.btn_them.TabIndex = 15;
             this.btn_them.Text = "Thêm";
+            this.btn_them.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_them.UseVisualStyleBackColor = true;
             this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // btn_xoa
             // 
+            this.btn_xoa.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_xoa.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btn_xoa.Location = new System.Drawing.Point(118, 428);
+            this.btn_xoa.Image = global::QLBH.Properties.Resources.delete;
+            this.btn_xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_xoa.Location = new System.Drawing.Point(103, 432);
             this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Size = new System.Drawing.Size(89, 36);
+            this.btn_xoa.Size = new System.Drawing.Size(90, 50);
             this.btn_xoa.TabIndex = 16;
             this.btn_xoa.Text = "Xóa";
+            this.btn_xoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_xoa.UseVisualStyleBackColor = true;
             this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_sua
             // 
+            this.btn_sua.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_sua.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btn_sua.Location = new System.Drawing.Point(213, 428);
+            this.btn_sua.Image = global::QLBH.Properties.Resources.pencil;
+            this.btn_sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_sua.Location = new System.Drawing.Point(194, 432);
             this.btn_sua.Name = "btn_sua";
-            this.btn_sua.Size = new System.Drawing.Size(89, 36);
+            this.btn_sua.Size = new System.Drawing.Size(90, 50);
             this.btn_sua.TabIndex = 17;
             this.btn_sua.Text = "Sửa";
+            this.btn_sua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_sua.UseVisualStyleBackColor = true;
             this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_luu
             // 
+            this.btn_luu.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_luu.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btn_luu.Location = new System.Drawing.Point(308, 428);
+            this.btn_luu.Image = global::QLBH.Properties.Resources.floppy_disk;
+            this.btn_luu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_luu.Location = new System.Drawing.Point(285, 432);
             this.btn_luu.Name = "btn_luu";
-            this.btn_luu.Size = new System.Drawing.Size(89, 36);
+            this.btn_luu.Size = new System.Drawing.Size(90, 50);
             this.btn_luu.TabIndex = 18;
             this.btn_luu.Text = "Lưu";
+            this.btn_luu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_luu.UseVisualStyleBackColor = true;
             this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
             // 
             // btn_boqua
             // 
+            this.btn_boqua.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_boqua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_boqua.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btn_boqua.Location = new System.Drawing.Point(430, 428);
+            this.btn_boqua.Image = global::QLBH.Properties.Resources.next;
+            this.btn_boqua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_boqua.Location = new System.Drawing.Point(466, 431);
             this.btn_boqua.Name = "btn_boqua";
-            this.btn_boqua.Size = new System.Drawing.Size(89, 36);
+            this.btn_boqua.Size = new System.Drawing.Size(103, 50);
             this.btn_boqua.TabIndex = 19;
             this.btn_boqua.Text = "Bỏ qua";
+            this.btn_boqua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_boqua.UseVisualStyleBackColor = true;
             // 
             // btn_danhsach
             // 
+            this.btn_danhsach.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_danhsach.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btn_danhsach.Location = new System.Drawing.Point(540, 428);
+            this.btn_danhsach.Image = global::QLBH.Properties.Resources.listing_option;
+            this.btn_danhsach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_danhsach.Location = new System.Drawing.Point(575, 432);
             this.btn_danhsach.Name = "btn_danhsach";
-            this.btn_danhsach.Size = new System.Drawing.Size(89, 36);
+            this.btn_danhsach.Size = new System.Drawing.Size(107, 50);
             this.btn_danhsach.TabIndex = 20;
             this.btn_danhsach.Text = "Danh sách";
+            this.btn_danhsach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_danhsach.UseVisualStyleBackColor = true;
             this.btn_danhsach.Click += new System.EventHandler(this.btn_danhsach_Click);
             // 
             // btn_dong
             // 
+            this.btn_dong.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_dong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_dong.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btn_dong.Location = new System.Drawing.Point(646, 428);
+            this.btn_dong.Image = global::QLBH.Properties.Resources.exit;
+            this.btn_dong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_dong.Location = new System.Drawing.Point(688, 432);
             this.btn_dong.Name = "btn_dong";
-            this.btn_dong.Size = new System.Drawing.Size(89, 36);
+            this.btn_dong.Size = new System.Drawing.Size(99, 50);
             this.btn_dong.TabIndex = 21;
             this.btn_dong.Text = "Đóng";
+            this.btn_dong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_dong.UseVisualStyleBackColor = true;
             this.btn_dong.Click += new System.EventHandler(this.btn_dong_Click);
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(321, 18);
@@ -278,6 +331,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.Controls.Add(this.rad_admin);
             this.panel1.Controls.Add(this.rad_nv);
             this.panel1.Location = new System.Drawing.Point(125, 153);
@@ -287,6 +341,7 @@
             // 
             // rad_admin
             // 
+            this.rad_admin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rad_admin.AutoSize = true;
             this.rad_admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rad_admin.ForeColor = System.Drawing.SystemColors.InfoText;
@@ -300,6 +355,7 @@
             // 
             // rad_nv
             // 
+            this.rad_nv.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rad_nv.AutoSize = true;
             this.rad_nv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rad_nv.ForeColor = System.Drawing.SystemColors.InfoText;
@@ -315,7 +371,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 476);
+            this.ClientSize = new System.Drawing.Size(799, 492);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btn_dong);

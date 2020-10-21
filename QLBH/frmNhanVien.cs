@@ -139,29 +139,33 @@ namespace QLBH
 
         private void dg_NhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow row = dg_NhanVien.Rows[e.RowIndex];
-            btn_luu.Enabled = false;
-            btn_sua.Enabled = true;
-            btn_xoa.Enabled = true;
-            txt_emailnv.Text = row.Cells[3].Value.ToString();
-            txt_tennv.Text = row.Cells[2].Value.ToString();
-            txt_diachi.Text = row.Cells[4].Value.ToString();
-            if(row.Cells[5].Value.ToString() == "1")
+            if (e.RowIndex >= 0)
             {
-                rad_admin.Checked = true;
+                DataGridViewRow row = dg_NhanVien.Rows[e.RowIndex];
+                btn_luu.Enabled = false;
+                btn_sua.Enabled = true;
+                btn_xoa.Enabled = true;
+                txt_emailnv.Text = row.Cells[3].Value.ToString();
+                txt_tennv.Text = row.Cells[2].Value.ToString();
+                txt_diachi.Text = row.Cells[4].Value.ToString();
+                if (row.Cells[5].Value.ToString() == "1")
+                {
+                    rad_admin.Checked = true;
+                }
+                else
+                {
+                    rad_nv.Checked = true;
+                }
+                if (row.Cells[6].Value.ToString() == "1")
+                {
+                    rad_hd.Checked = true;
+                }
+                else
+                {
+                    rad_ngunghd.Checked = true;
+                }
             }
-            else
-            {
-                rad_nv.Checked= true;
-            }
-            if(row.Cells[6].Value.ToString() == "1")
-            {
-                rad_hd.Checked = true;
-            }
-            else
-            {
-                rad_ngunghd.Checked = true;
-            }
+        
         }
 
         private void btn_sua_Click(object sender, EventArgs e)
