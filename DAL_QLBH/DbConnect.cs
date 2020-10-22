@@ -11,6 +11,6 @@ namespace DAL_QLBH
     public class DbConnect
     {
         static string conStr = ConfigurationManager.ConnectionStrings["QLBH"].ToString();
-        protected SqlConnection _con = new SqlConnection(conStr);
+        protected static SqlConnection _con = new SqlConnection(conStr);
     }
 }

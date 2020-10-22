@@ -20,7 +20,6 @@ namespace QLBH
         public frmNhanVien()
         {
             InitializeComponent();
-            this.BringToFront();
         }
         private void LoadGridView_NhanVien()
         {
@@ -51,7 +50,18 @@ namespace QLBH
         private void btn_them_Click(object sender, EventArgs e)
         {
             ResetValues();
-           
+            btn_luu.Enabled = true;
+            foreach(Control c in this.Controls)
+            {
+                if(c is TextBox)
+                {
+                    ((TextBox)c).Enabled = true;
+                }
+            }
+            rad_admin.Enabled = true;
+            rad_nv.Enabled = true;
+            rad_hd.Enabled = true;
+            rad_ngunghd.Enabled = true;
         }
         private void ResetValues()
         {
@@ -59,13 +69,14 @@ namespace QLBH
             {
                 if(c is TextBox)
                 {
-                    ((TextBox)c).Text = null;
+                    if (((TextBox)c).Name != txt_timkiem.Name)
+                        ((TextBox)c).Text = null;
                 }
              
             }
             btn_luu.Enabled = true;
-            btn_sua.Enabled = false;
             btn_xoa.Enabled = false;
+            btn_sua.Enabled = false;
             rad_admin.Checked = false;
             rad_nv.Checked = false;
             rad_hd.Checked = false;
@@ -142,6 +153,7 @@ namespace QLBH
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dg_NhanVien.Rows[e.RowIndex];
+                
                 btn_luu.Enabled = false;
                 btn_sua.Enabled = true;
                 btn_xoa.Enabled = true;

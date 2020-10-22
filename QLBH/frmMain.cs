@@ -20,13 +20,12 @@ namespace QLBH
         public static int session = 0;
         public static int profile = 0;
         public static string email = "";
-
+        public static bool isFirstLogin = false;
         Thread th;
         public frmMain_QLBH()
         {
             InitializeComponent();
             this.BackgroundImage = this.BackgroundImage;
-            
         }
        
         private void frmMain_QLBH_Load(object sender, EventArgs e)
@@ -37,7 +36,11 @@ namespace QLBH
                 hồSơNhânViênToolStripMenuItem.Visible = false;
                 profile = 0;
             }
-          
+            if(isFirstLogin == true)
+            {
+                MessageBox.Show("Nhân viên đăng nhập lần đầu cần đổi mật khẩu","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                hồSơNhânViênToolStripMenuItem_Click(sender, e);
+            }
         }
         private void ResetValue()
         {
@@ -50,14 +53,16 @@ namespace QLBH
                 thốngKêSảnPhẩmToolStripMenuItem.Visible = true;
                 hồSơNhânViênToolStripMenuItem.Visible = true;
                 đăngNhậpToolStripMenuItem.Enabled = false;
+                thongtinNVToolStripMenuItem.Visible = true;
                 if (dn.vaitro == 0)
                 {
                     VaiTroNV();
                 }
-                this.Text = "frmMain_QLBH   EmailNv: " + email;
+                thongtinNVToolStripMenuItem.Text = "Xin chào," + email;
             }
             else
             {
+                isFirstLogin = false;
                 nhânViênToolStripMenuItem.Visible = false;
                 danhMụcToolStripMenuItem.Visible = false;
                 đăngXuấtToolStripMenuItem.Enabled = false;
@@ -65,7 +70,7 @@ namespace QLBH
                 thốngKêSảnPhẩmToolStripMenuItem.Visible = false;
                 hồSơNhânViênToolStripMenuItem.Visible = false;
                 đăngNhậpToolStripMenuItem.Enabled = true;
-                this.Text = "frmMain_QLBH";
+                thongtinNVToolStripMenuItem.Visible = false;
             }
         }
         private void VaiTroNV()
@@ -99,7 +104,6 @@ namespace QLBH
         }
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
              dn = new frmDangNhap();
             if (!CheckExistForm(dn.Name))
             {
@@ -120,11 +124,18 @@ namespace QLBH
        
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            session = 0;
-            ResetValue();
-           foreach(Form f in this.MdiChildren)
+            if(MessageBox.Show("Đăng xuất?","Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                f.Close();
+                session = 0;
+                ResetValue();
+                foreach (Form f in this.MdiChildren)
+                {
+                    f.Close();
+                }
+            }
+            else
+            {
+                return;
             }
         }
 
@@ -200,7 +211,10 @@ namespace QLBH
 
         private void frmMain_QLBH_MdiChildActivate(object sender, EventArgs e)
         {
-
+            if (ActiveMdiChild != null)
+                label1.SendToBack();
+            else
+                label1.BringToFront();
         }
 
         private void thốngKêSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)

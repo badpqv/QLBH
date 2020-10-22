@@ -61,7 +61,10 @@ namespace QLBH
                     Settings.Default.isRemember = false;
                     Settings.Default.Save();
                 }
-               
+                if (nv.MatKhau == busNhanVien.encryption("123456"))
+                {
+                    frmMain_QLBH.isFirstLogin = true;
+                }
                 this.Close();
             }
             else

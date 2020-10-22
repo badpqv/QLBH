@@ -40,13 +40,20 @@ namespace QLBH
             {
                 if(c is TextBox)
                 {
-                    ((TextBox)c).Text = null;
+                    if(((TextBox)c).Name != txt_timkiem.Name)
+                        ((TextBox)c).Text = null;
                 }
-                rad_nam.Checked = false;
-                rad_nu.Checked = false;
-                btn_update.Enabled = false;
-                btn_xoa.Enabled = false;
+                btn_luu.Enabled = true;
+               
             }
+            btn_xoa.Enabled = false;
+            btn_update.Enabled = false;
+            rad_nam.Checked = false;
+            rad_nu.Checked = false;
+            btn_luu.Enabled = true;
+            btn_update.Enabled = false;
+            btn_xoa.Enabled = false;
+            txt_tenkhach.Focus();
         }
         private void frmKhachHang_Load(object sender, EventArgs e)
         {
@@ -121,6 +128,7 @@ namespace QLBH
                 {
                     rad_nu.Checked = true;
                 }
+               
             }
          
         }
@@ -128,6 +136,7 @@ namespace QLBH
         private void btn_them_Click(object sender, EventArgs e)
         {
             ResetValues();
+            
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)
@@ -251,6 +260,21 @@ namespace QLBH
                 txt_timkiem.ForeColor = Color.Silver;
                 txt_timkiem.Text = "Nhập tên khách";
             }
+        }
+
+        private void txt_tenkhach_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rad_nam_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rad_nu_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
