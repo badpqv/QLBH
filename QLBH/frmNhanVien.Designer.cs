@@ -173,6 +173,7 @@
             this.dg_NhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dg_NhanVien.BackgroundColor = System.Drawing.Color.White;
             this.dg_NhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_NhanVien.Location = new System.Drawing.Point(-1, 196);
             this.dg_NhanVien.Name = "dg_NhanVien";

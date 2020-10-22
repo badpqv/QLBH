@@ -239,6 +239,7 @@
             this.dgv_hang.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_hang.BackgroundColor = System.Drawing.Color.White;
             this.dgv_hang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_hang.Location = new System.Drawing.Point(12, 269);
             this.dgv_hang.Name = "dgv_hang";

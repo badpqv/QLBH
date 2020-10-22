@@ -57,6 +57,7 @@
             this.dgv_khachhang.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_khachhang.BackgroundColor = System.Drawing.Color.White;
             this.dgv_khachhang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_khachhang.Location = new System.Drawing.Point(3, 144);
             this.dgv_khachhang.Name = "dgv_khachhang";

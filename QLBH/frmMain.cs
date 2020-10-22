@@ -20,7 +20,6 @@ namespace QLBH
         public static int session = 0;
         public static int profile = 0;
         public static string email = "";
-        public static bool isFirstLogin = false;
         Thread th;
         public frmMain_QLBH()
         {
@@ -36,11 +35,7 @@ namespace QLBH
                 hồSơNhânViênToolStripMenuItem.Visible = false;
                 profile = 0;
             }
-            if(isFirstLogin == true)
-            {
-                MessageBox.Show("Nhân viên đăng nhập lần đầu cần đổi mật khẩu","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                hồSơNhânViênToolStripMenuItem_Click(sender, e);
-            }
+           
         }
         private void ResetValue()
         {
@@ -62,7 +57,6 @@ namespace QLBH
             }
             else
             {
-                isFirstLogin = false;
                 nhânViênToolStripMenuItem.Visible = false;
                 danhMụcToolStripMenuItem.Visible = false;
                 đăngXuấtToolStripMenuItem.Enabled = false;
