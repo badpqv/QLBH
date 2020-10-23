@@ -229,7 +229,7 @@
             this.btn_mohinh.Location = new System.Drawing.Point(544, 87);
             this.btn_mohinh.Name = "btn_mohinh";
             this.btn_mohinh.Size = new System.Drawing.Size(101, 23);
-            this.btn_mohinh.TabIndex = 15;
+            this.btn_mohinh.TabIndex = 6;
             this.btn_mohinh.Text = "Mở hình";
             this.btn_mohinh.UseVisualStyleBackColor = true;
             this.btn_mohinh.Click += new System.EventHandler(this.btn_mohinh_Click);
@@ -256,7 +256,7 @@
             this.txt_timkiem.Location = new System.Drawing.Point(581, 449);
             this.txt_timkiem.Name = "txt_timkiem";
             this.txt_timkiem.Size = new System.Drawing.Size(169, 26);
-            this.txt_timkiem.TabIndex = 18;
+            this.txt_timkiem.TabIndex = 8;
             this.txt_timkiem.Text = "Nhập tên sản phẩm";
             this.txt_timkiem.Enter += new System.EventHandler(this.textBox8_Enter);
             this.txt_timkiem.Leave += new System.EventHandler(this.txt_timkiem_Leave);
@@ -270,7 +270,7 @@
             this.btn_timkiem.Location = new System.Drawing.Point(756, 431);
             this.btn_timkiem.Name = "btn_timkiem";
             this.btn_timkiem.Size = new System.Drawing.Size(121, 49);
-            this.btn_timkiem.TabIndex = 19;
+            this.btn_timkiem.TabIndex = 9;
             this.btn_timkiem.Text = "Tìm kiếm";
             this.btn_timkiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_timkiem.UseVisualStyleBackColor = true;
@@ -282,10 +282,10 @@
             this.btn_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_update.Image = global::QLBH.Properties.Resources.pencil;
             this.btn_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_update.Location = new System.Drawing.Point(189, 480);
+            this.btn_update.Location = new System.Drawing.Point(195, 478);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(85, 50);
-            this.btn_update.TabIndex = 22;
+            this.btn_update.TabIndex = 11;
             this.btn_update.Text = "Sửa";
             this.btn_update.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_update.UseVisualStyleBackColor = true;
@@ -297,10 +297,10 @@
             this.btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_luu.Image = global::QLBH.Properties.Resources.floppy_disk;
             this.btn_luu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_luu.Location = new System.Drawing.Point(280, 480);
+            this.btn_luu.Location = new System.Drawing.Point(104, 478);
             this.btn_luu.Name = "btn_luu";
             this.btn_luu.Size = new System.Drawing.Size(85, 50);
-            this.btn_luu.TabIndex = 23;
+            this.btn_luu.TabIndex = 10;
             this.btn_luu.Text = "Lưu";
             this.btn_luu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_luu.UseVisualStyleBackColor = true;
@@ -315,10 +315,11 @@
             this.btn_boqua.Location = new System.Drawing.Point(514, 481);
             this.btn_boqua.Name = "btn_boqua";
             this.btn_boqua.Size = new System.Drawing.Size(104, 50);
-            this.btn_boqua.TabIndex = 24;
+            this.btn_boqua.TabIndex = 13;
             this.btn_boqua.Text = "Bỏ qua";
             this.btn_boqua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_boqua.UseVisualStyleBackColor = true;
+            this.btn_boqua.Click += new System.EventHandler(this.btn_boqua_Click);
             // 
             // btn_danhsach
             // 
@@ -329,7 +330,7 @@
             this.btn_danhsach.Location = new System.Drawing.Point(624, 481);
             this.btn_danhsach.Name = "btn_danhsach";
             this.btn_danhsach.Size = new System.Drawing.Size(126, 50);
-            this.btn_danhsach.TabIndex = 25;
+            this.btn_danhsach.TabIndex = 14;
             this.btn_danhsach.Text = "Danh sách";
             this.btn_danhsach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_danhsach.UseVisualStyleBackColor = true;
@@ -344,7 +345,7 @@
             this.btn_thoat.Location = new System.Drawing.Point(756, 481);
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.Size = new System.Drawing.Size(121, 50);
-            this.btn_thoat.TabIndex = 26;
+            this.btn_thoat.TabIndex = 15;
             this.btn_thoat.Text = "Thoát";
             this.btn_thoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_thoat.UseVisualStyleBackColor = true;
@@ -356,10 +357,10 @@
             this.btn_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_xoa.Image = global::QLBH.Properties.Resources.delete;
             this.btn_xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_xoa.Location = new System.Drawing.Point(102, 480);
+            this.btn_xoa.Location = new System.Drawing.Point(286, 478);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(85, 50);
-            this.btn_xoa.TabIndex = 21;
+            this.btn_xoa.TabIndex = 12;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_xoa.UseVisualStyleBackColor = true;
@@ -374,7 +375,7 @@
             this.btn_them.Location = new System.Drawing.Point(13, 480);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(85, 50);
-            this.btn_them.TabIndex = 20;
+            this.btn_them.TabIndex = 8;
             this.btn_them.Text = "Thêm";
             this.btn_them.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_them.UseVisualStyleBackColor = true;

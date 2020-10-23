@@ -74,7 +74,7 @@
             this.txt_timkiem.Location = new System.Drawing.Point(455, 381);
             this.txt_timkiem.Name = "txt_timkiem";
             this.txt_timkiem.Size = new System.Drawing.Size(217, 26);
-            this.txt_timkiem.TabIndex = 7;
+            this.txt_timkiem.TabIndex = 6;
             this.txt_timkiem.Text = "Nhập tên khách";
             this.txt_timkiem.Enter += new System.EventHandler(this.txt_timkiem_Enter);
             this.txt_timkiem.Leave += new System.EventHandler(this.txt_timkiem_Leave);
@@ -83,7 +83,7 @@
             // 
             this.txt_tenkhach.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_tenkhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tenkhach.Location = new System.Drawing.Point(141, 49);
+            this.txt_tenkhach.Location = new System.Drawing.Point(133, 52);
             this.txt_tenkhach.Name = "txt_tenkhach";
             this.txt_tenkhach.Size = new System.Drawing.Size(179, 26);
             this.txt_tenkhach.TabIndex = 1;
@@ -95,7 +95,7 @@
             this.txt_diachi.Location = new System.Drawing.Point(455, 102);
             this.txt_diachi.Name = "txt_diachi";
             this.txt_diachi.Size = new System.Drawing.Size(179, 26);
-            this.txt_diachi.TabIndex = 6;
+            this.txt_diachi.TabIndex = 5;
             // 
             // txt_sdt
             // 
@@ -122,7 +122,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(405, 55);
+            this.label2.Location = new System.Drawing.Point(404, 52);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 20);
             this.label2.TabIndex = 14;
@@ -158,7 +158,7 @@
             this.rad_nam.Location = new System.Drawing.Point(151, 101);
             this.rad_nam.Name = "rad_nam";
             this.rad_nam.Size = new System.Drawing.Size(60, 24);
-            this.rad_nam.TabIndex = 4;
+            this.rad_nam.TabIndex = 3;
             this.rad_nam.TabStop = true;
             this.rad_nam.Text = "Nam";
             this.rad_nam.UseVisualStyleBackColor = true;
@@ -171,7 +171,7 @@
             this.rad_nu.Location = new System.Drawing.Point(259, 101);
             this.rad_nu.Name = "rad_nu";
             this.rad_nu.Size = new System.Drawing.Size(47, 24);
-            this.rad_nu.TabIndex = 5;
+            this.rad_nu.TabIndex = 4;
             this.rad_nu.TabStop = true;
             this.rad_nu.Text = "Nữ";
             this.rad_nu.UseVisualStyleBackColor = true;
@@ -185,10 +185,11 @@
             this.btn_boqua.Location = new System.Drawing.Point(455, 413);
             this.btn_boqua.Name = "btn_boqua";
             this.btn_boqua.Size = new System.Drawing.Size(98, 51);
-            this.btn_boqua.TabIndex = 13;
+            this.btn_boqua.TabIndex = 12;
             this.btn_boqua.Text = "Bỏ qua";
             this.btn_boqua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_boqua.UseVisualStyleBackColor = true;
+            this.btn_boqua.Click += new System.EventHandler(this.btn_boqua_Click);
             // 
             // btn_thoat
             // 
@@ -199,7 +200,7 @@
             this.btn_thoat.Location = new System.Drawing.Point(680, 413);
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.Size = new System.Drawing.Size(107, 51);
-            this.btn_thoat.TabIndex = 15;
+            this.btn_thoat.TabIndex = 14;
             this.btn_thoat.Text = "Thoát";
             this.btn_thoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_thoat.UseVisualStyleBackColor = true;
@@ -214,7 +215,7 @@
             this.btn_danhsach.Location = new System.Drawing.Point(559, 414);
             this.btn_danhsach.Name = "btn_danhsach";
             this.btn_danhsach.Size = new System.Drawing.Size(115, 51);
-            this.btn_danhsach.TabIndex = 14;
+            this.btn_danhsach.TabIndex = 13;
             this.btn_danhsach.Text = "Danh sách";
             this.btn_danhsach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_danhsach.UseVisualStyleBackColor = true;
@@ -288,7 +289,7 @@
             this.btn_timkiem.Location = new System.Drawing.Point(678, 356);
             this.btn_timkiem.Name = "btn_timkiem";
             this.btn_timkiem.Size = new System.Drawing.Size(109, 50);
-            this.btn_timkiem.TabIndex = 8;
+            this.btn_timkiem.TabIndex = 7;
             this.btn_timkiem.Text = "Tìm kiếm";
             this.btn_timkiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_timkiem.UseVisualStyleBackColor = true;

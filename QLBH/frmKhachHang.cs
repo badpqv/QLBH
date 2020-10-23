@@ -292,15 +292,18 @@ namespace QLBH
 
    
 
-        private void rad_nu_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void dgv_khachhang_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Delete)
                 btn_xoa_Click(sender, e);
+        }
+
+        private void btn_boqua_Click(object sender, EventArgs e)
+        {
+            this.Refresh();
+            frmKhachHang_Load(sender, e);
         }
     }
 }

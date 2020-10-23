@@ -41,7 +41,6 @@ namespace QLBH
             DTO_Nhanvien nv = new DTO_Nhanvien();
             nv.EmailNv = txt_emailnv.Text;
             nv.MatKhau = busNhanVien.encryption(txt_pass.Text);
-            
             if (busNhanVien.NhanVienDangNhap(nv))
             {
                 frmMain_QLBH.session = 1;

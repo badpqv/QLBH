@@ -97,7 +97,7 @@
             this.txt_emailnv.Location = new System.Drawing.Point(142, 82);
             this.txt_emailnv.Name = "txt_emailnv";
             this.txt_emailnv.Size = new System.Drawing.Size(234, 26);
-            this.txt_emailnv.TabIndex = 3;
+            this.txt_emailnv.TabIndex = 1;
             // 
             // txt_tennv
             // 
@@ -106,7 +106,7 @@
             this.txt_tennv.Location = new System.Drawing.Point(142, 121);
             this.txt_tennv.Name = "txt_tennv";
             this.txt_tennv.Size = new System.Drawing.Size(234, 26);
-            this.txt_tennv.TabIndex = 4;
+            this.txt_tennv.TabIndex = 2;
             // 
             // txt_diachi
             // 
@@ -116,7 +116,7 @@
             this.txt_diachi.Multiline = true;
             this.txt_diachi.Name = "txt_diachi";
             this.txt_diachi.Size = new System.Drawing.Size(234, 65);
-            this.txt_diachi.TabIndex = 5;
+            this.txt_diachi.TabIndex = 3;
             // 
             // label4
             // 
@@ -149,7 +149,7 @@
             this.rad_ngunghd.Location = new System.Drawing.Point(629, 159);
             this.rad_ngunghd.Name = "rad_ngunghd";
             this.rad_ngunghd.Size = new System.Drawing.Size(150, 24);
-            this.rad_ngunghd.TabIndex = 11;
+            this.rad_ngunghd.TabIndex = 7;
             this.rad_ngunghd.TabStop = true;
             this.rad_ngunghd.Text = "Ngừng hoạt động";
             this.rad_ngunghd.UseVisualStyleBackColor = true;
@@ -163,7 +163,7 @@
             this.rad_hd.Location = new System.Drawing.Point(489, 159);
             this.rad_hd.Name = "rad_hd";
             this.rad_hd.Size = new System.Drawing.Size(102, 24);
-            this.rad_hd.TabIndex = 10;
+            this.rad_hd.TabIndex = 6;
             this.rad_hd.TabStop = true;
             this.rad_hd.Text = "Hoạt động";
             this.rad_hd.UseVisualStyleBackColor = true;
@@ -190,7 +190,7 @@
             this.txt_timkiem.Location = new System.Drawing.Point(466, 400);
             this.txt_timkiem.Name = "txt_timkiem";
             this.txt_timkiem.Size = new System.Drawing.Size(216, 26);
-            this.txt_timkiem.TabIndex = 13;
+            this.txt_timkiem.TabIndex = 8;
             this.txt_timkiem.Text = "Tìm kiếm nhân viên";
             this.txt_timkiem.Enter += new System.EventHandler(this.txt_timkiem_Enter);
             this.txt_timkiem.Leave += new System.EventHandler(this.txt_timkiem_Leave);
@@ -204,7 +204,7 @@
             this.btn_timkiem.Location = new System.Drawing.Point(688, 382);
             this.btn_timkiem.Name = "btn_timkiem";
             this.btn_timkiem.Size = new System.Drawing.Size(99, 46);
-            this.btn_timkiem.TabIndex = 14;
+            this.btn_timkiem.TabIndex = 9;
             this.btn_timkiem.Text = "Tìm kiếm";
             this.btn_timkiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_timkiem.UseVisualStyleBackColor = true;
@@ -220,7 +220,7 @@
             this.btn_them.Location = new System.Drawing.Point(12, 432);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(90, 50);
-            this.btn_them.TabIndex = 15;
+            this.btn_them.TabIndex = 10;
             this.btn_them.Text = "Thêm";
             this.btn_them.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_them.UseVisualStyleBackColor = true;
@@ -233,10 +233,10 @@
             this.btn_xoa.ForeColor = System.Drawing.SystemColors.InfoText;
             this.btn_xoa.Image = global::QLBH.Properties.Resources.delete;
             this.btn_xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_xoa.Location = new System.Drawing.Point(103, 432);
+            this.btn_xoa.Location = new System.Drawing.Point(300, 430);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(90, 50);
-            this.btn_xoa.TabIndex = 16;
+            this.btn_xoa.TabIndex = 13;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_xoa.UseVisualStyleBackColor = true;
@@ -249,10 +249,10 @@
             this.btn_sua.ForeColor = System.Drawing.SystemColors.InfoText;
             this.btn_sua.Image = global::QLBH.Properties.Resources.pencil;
             this.btn_sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_sua.Location = new System.Drawing.Point(194, 432);
+            this.btn_sua.Location = new System.Drawing.Point(204, 430);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(90, 50);
-            this.btn_sua.TabIndex = 17;
+            this.btn_sua.TabIndex = 12;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_sua.UseVisualStyleBackColor = true;
@@ -265,10 +265,10 @@
             this.btn_luu.ForeColor = System.Drawing.SystemColors.InfoText;
             this.btn_luu.Image = global::QLBH.Properties.Resources.floppy_disk;
             this.btn_luu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_luu.Location = new System.Drawing.Point(285, 432);
+            this.btn_luu.Location = new System.Drawing.Point(108, 432);
             this.btn_luu.Name = "btn_luu";
             this.btn_luu.Size = new System.Drawing.Size(90, 50);
-            this.btn_luu.TabIndex = 18;
+            this.btn_luu.TabIndex = 11;
             this.btn_luu.Text = "Lưu";
             this.btn_luu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_luu.UseVisualStyleBackColor = true;
@@ -284,10 +284,11 @@
             this.btn_boqua.Location = new System.Drawing.Point(466, 431);
             this.btn_boqua.Name = "btn_boqua";
             this.btn_boqua.Size = new System.Drawing.Size(103, 50);
-            this.btn_boqua.TabIndex = 19;
+            this.btn_boqua.TabIndex = 14;
             this.btn_boqua.Text = "Bỏ qua";
             this.btn_boqua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_boqua.UseVisualStyleBackColor = true;
+            this.btn_boqua.Click += new System.EventHandler(this.btn_boqua_Click);
             // 
             // btn_danhsach
             // 
@@ -298,7 +299,7 @@
             this.btn_danhsach.Location = new System.Drawing.Point(575, 432);
             this.btn_danhsach.Name = "btn_danhsach";
             this.btn_danhsach.Size = new System.Drawing.Size(107, 50);
-            this.btn_danhsach.TabIndex = 20;
+            this.btn_danhsach.TabIndex = 15;
             this.btn_danhsach.Text = "Danh sách";
             this.btn_danhsach.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_danhsach.UseVisualStyleBackColor = true;
@@ -314,7 +315,7 @@
             this.btn_dong.Location = new System.Drawing.Point(688, 432);
             this.btn_dong.Name = "btn_dong";
             this.btn_dong.Size = new System.Drawing.Size(99, 50);
-            this.btn_dong.TabIndex = 21;
+            this.btn_dong.TabIndex = 16;
             this.btn_dong.Text = "Đóng";
             this.btn_dong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_dong.UseVisualStyleBackColor = true;
@@ -350,7 +351,7 @@
             this.rad_admin.Location = new System.Drawing.Point(166, 6);
             this.rad_admin.Name = "rad_admin";
             this.rad_admin.Size = new System.Drawing.Size(83, 24);
-            this.rad_admin.TabIndex = 10;
+            this.rad_admin.TabIndex = 5;
             this.rad_admin.TabStop = true;
             this.rad_admin.Text = "Quản trị";
             this.rad_admin.UseVisualStyleBackColor = true;
@@ -364,7 +365,7 @@
             this.rad_nv.Location = new System.Drawing.Point(13, 6);
             this.rad_nv.Name = "rad_nv";
             this.rad_nv.Size = new System.Drawing.Size(97, 24);
-            this.rad_nv.TabIndex = 9;
+            this.rad_nv.TabIndex = 4;
             this.rad_nv.TabStop = true;
             this.rad_nv.Text = "Nhân viên";
             this.rad_nv.UseVisualStyleBackColor = true;

@@ -24,11 +24,13 @@ namespace QLBH
         private void LoadGridView_NhanVien()
         {
             dg_NhanVien.DataSource = busNhanVien.getNhanVien();
+            dg_NhanVien.Columns[1].HeaderText = "Mã nhân viên";
             dg_NhanVien.Columns[2].HeaderText = "Tên nhân viên";
             dg_NhanVien.Columns[3].HeaderText = "Email";
             dg_NhanVien.Columns[4].HeaderText = "Địa chỉ";
             dg_NhanVien.Columns[5].HeaderText = "Vai trò";
             dg_NhanVien.Columns[6].HeaderText = "Tình trạng";
+            dg_NhanVien.Columns[7].Visible = false;
         }
         private void frmNhanVien_Load(object sender, EventArgs e)
         {
@@ -62,7 +64,7 @@ namespace QLBH
             rad_nv.Enabled = true;
             rad_hd.Enabled = true;
             rad_ngunghd.Enabled = true;
-            txt_tennv.Focus();
+            txt_emailnv.Focus();
         }
         private void ResetValues()
         {
@@ -313,6 +315,12 @@ namespace QLBH
             {
                 btn_xoa_Click(sender, e);
             }
+        }
+
+        private void btn_boqua_Click(object sender, EventArgs e)
+        {
+            this.Refresh();
+            frmNhanVien_Load(sender, e);
         }
     }
 }

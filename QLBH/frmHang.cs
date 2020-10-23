@@ -77,7 +77,7 @@ namespace QLBH
                     {
                         if (c is TextBox)
                         {
-                            if (((TextBox)c).Name != txt_timkiem.Name)
+                            if (((TextBox)c).Name != txt_timkiem.Name && ((TextBox)c).Name != txt_mahang.Name)
                             {
                                 ((TextBox)c).Enabled = true;
                             }
@@ -97,8 +97,6 @@ namespace QLBH
                 }
                 catch
                 {
-                    btn_xoa.Enabled = false;
-                    btn_update.Enabled = false;
                     pbox_hinhanh.Image = null;
                     return;
                 }
@@ -130,7 +128,7 @@ namespace QLBH
             {
                 if (c is TextBox)
                 {
-                    if (((TextBox)c).Name != txt_timkiem.Name)
+                    if (((TextBox)c).Name != txt_timkiem.Name && ((TextBox)c).Name != txt_mahang.Name)
                     {
                         ((TextBox)c).Enabled = true;
                     }
@@ -325,6 +323,12 @@ namespace QLBH
         {
             if (e.KeyCode == Keys.Delete)
                 btn_xoa_Click(sender, e);
+        }
+
+        private void btn_boqua_Click(object sender, EventArgs e)
+        {
+            this.Refresh();
+            frmHang_Load(sender, e);
         }
     }
 }
