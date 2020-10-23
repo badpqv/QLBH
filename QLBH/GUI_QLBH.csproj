@@ -187,6 +187,7 @@
       <DependentUpon>DuAnMau.mdf</DependentUpon>
     </Content>
     <Content Include="Poly.ico" />
+    <None Include="Resources\open.png" />
     <None Include="Resources\loupe.png" />
     <None Include="Resources\listing-option.png" />
     <None Include="Resources\next.png" />
