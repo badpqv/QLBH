@@ -64,6 +64,7 @@
             this.dgv_khachhang.Size = new System.Drawing.Size(796, 206);
             this.dgv_khachhang.TabIndex = 0;
             this.dgv_khachhang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dgv_khachhang.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgv_khachhang_KeyDown);
             // 
             // txt_timkiem
             // 
@@ -86,7 +87,6 @@
             this.txt_tenkhach.Name = "txt_tenkhach";
             this.txt_tenkhach.Size = new System.Drawing.Size(179, 26);
             this.txt_tenkhach.TabIndex = 1;
-            this.txt_tenkhach.TextChanged += new System.EventHandler(this.txt_tenkhach_TextChanged);
             // 
             // txt_diachi
             // 
@@ -162,7 +162,6 @@
             this.rad_nam.TabStop = true;
             this.rad_nam.Text = "Nam";
             this.rad_nam.UseVisualStyleBackColor = true;
-            this.rad_nam.CheckedChanged += new System.EventHandler(this.rad_nam_CheckedChanged);
             // 
             // rad_nu
             // 
@@ -176,7 +175,6 @@
             this.rad_nu.TabStop = true;
             this.rad_nu.Text = "Nữ";
             this.rad_nu.UseVisualStyleBackColor = true;
-            this.rad_nu.CheckedChanged += new System.EventHandler(this.rad_nu_CheckedChanged);
             // 
             // btn_boqua
             // 

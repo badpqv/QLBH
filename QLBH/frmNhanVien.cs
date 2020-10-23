@@ -62,6 +62,7 @@ namespace QLBH
             rad_nv.Enabled = true;
             rad_hd.Enabled = true;
             rad_ngunghd.Enabled = true;
+            txt_tennv.Focus();
         }
         private void ResetValues()
         {
@@ -70,7 +71,10 @@ namespace QLBH
                 if(c is TextBox)
                 {
                     if (((TextBox)c).Name != txt_timkiem.Name)
+                    {
                         ((TextBox)c).Text = null;
+                        ((TextBox)c).Enabled = false;
+                    }
                 }
              
             }
@@ -80,7 +84,11 @@ namespace QLBH
             rad_admin.Checked = false;
             rad_nv.Checked = false;
             rad_hd.Checked = false;
-            rad_ngunghd.Checked = false;
+            rad_ngunghd.Checked = false;  
+            rad_admin.Enabled = false;
+            rad_nv.Enabled = false;
+            rad_hd.Enabled = false;
+            rad_ngunghd.Enabled = false;
             txt_emailnv.Focus();
         }
         private void btn_luu_Click(object sender, EventArgs e)
@@ -150,10 +158,24 @@ namespace QLBH
 
         private void dg_NhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dg_NhanVien.Rows[e.RowIndex];
-                
+                foreach (Control c in this.Controls)
+                {
+                    if (c is TextBox)
+                    {
+                        if (((TextBox)c).Name != txt_timkiem.Name)
+                        {
+                            ((TextBox)c).Enabled = true;
+                        }
+                    }
+                }
+                rad_admin.Enabled = true;
+                rad_nv.Enabled = true;
+                rad_hd.Enabled = true;
+                rad_ngunghd.Enabled = true;
                 btn_luu.Enabled = false;
                 btn_sua.Enabled = true;
                 btn_xoa.Enabled = true;
@@ -267,13 +289,13 @@ namespace QLBH
                     {
                     if (busNhanVien.DeleteNhanVien(txt_emailnv.Text))
                     {
-                        MessageBox.Show("Xáo thành công");
+                        MessageBox.Show("Xóa thành công");
                         ResetValues();
                         LoadGridView_NhanVien();
                     }
                     else
                     {
-                        MessageBox.Show("Xáo không thành công");
+                        MessageBox.Show("Xóa không thành công");
 
                     }
 
@@ -282,6 +304,14 @@ namespace QLBH
                 {
                     ResetValues();
                 }
+            }
+        }
+
+        private void dg_NhanVien_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Delete)
+            {
+                btn_xoa_Click(sender, e);
             }
         }
     }

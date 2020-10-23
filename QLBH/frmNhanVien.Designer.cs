@@ -180,6 +180,7 @@
             this.dg_NhanVien.Size = new System.Drawing.Size(798, 172);
             this.dg_NhanVien.TabIndex = 12;
             this.dg_NhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_NhanVien_CellClick);
+            this.dg_NhanVien.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dg_NhanVien_KeyDown);
             // 
             // txt_timkiem
             // 

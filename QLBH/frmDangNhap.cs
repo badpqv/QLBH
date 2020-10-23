@@ -13,6 +13,7 @@ using BUS_QLBH;
 using System.Net.Mail;
 using System.Net;
 using QLBH.Properties;
+using System.IO;
 
 namespace QLBH
 {
@@ -20,6 +21,7 @@ namespace QLBH
     {
         BUS_NhanVien busNhanVien = new BUS_NhanVien();
         public int vaitro { set; get; }
+        static string logFilePath = Application.StartupPath + "\\login.log";
         public frmDangNhap()
         {
             InitializeComponent();
@@ -39,7 +41,7 @@ namespace QLBH
             DTO_Nhanvien nv = new DTO_Nhanvien();
             nv.EmailNv = txt_emailnv.Text;
             nv.MatKhau = busNhanVien.encryption(txt_pass.Text);
-          
+            
             if (busNhanVien.NhanVienDangNhap(nv))
             {
                 frmMain_QLBH.session = 1;
@@ -61,6 +63,17 @@ namespace QLBH
                     Settings.Default.isRemember = false;
                     Settings.Default.Save();
                 }
+                using (StreamReader sr = new StreamReader(logFilePath))
+                {
+                    if (!sr.ReadToEnd().Contains(txt_emailnv.Text))
+                    {
+                        frmMain_QLBH.isFirstLogin = true;
+                    }
+                }
+                StreamWriter sw = new StreamWriter(logFilePath,true);
+                sw.WriteLine(txt_emailnv.Text);
+                sw.Flush();
+                sw.Close();
                 this.Close();
             }
             else

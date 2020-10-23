@@ -28,6 +28,15 @@ namespace QLBH
         private void LoadGridView_Hang()
         {
            dgv_hang.DataSource = busHang.getHang();
+            dgv_hang.Columns[0].HeaderText = "Mã hàng";
+            dgv_hang.Columns[1].HeaderText = "Tên hàng";
+            dgv_hang.Columns[2].HeaderText = "Số lượng";
+            dgv_hang.Columns[3].HeaderText = "Giá nhập";
+            dgv_hang.Columns[4].HeaderText = "Giá bán";
+            dgv_hang.Columns[5].HeaderText = "Hình ảnh";
+            dgv_hang.Columns[6].HeaderText = "Ghi chú";
+            dgv_hang.Columns[7].Visible = false;
+
         }
         private void ResetValues()
         {
@@ -36,9 +45,13 @@ namespace QLBH
                 if(c is TextBox)
                 {
                     if (((TextBox)c).Name != txt_timkiem.Name)
+                    {
                         ((TextBox)c).Text = null;
+                        ((TextBox)c).Enabled = false;
+                    }
                 }
             }
+            btn_mohinh.Enabled = false;
             btn_update.Enabled = false;
             btn_xoa.Enabled = false;
             btn_luu.Enabled = true;
@@ -60,6 +73,17 @@ namespace QLBH
                     btn_update.Enabled = true;
                     btn_xoa.Enabled = true;
                     btn_luu.Enabled = false;
+                    foreach (Control c in this.Controls)
+                    {
+                        if (c is TextBox)
+                        {
+                            if (((TextBox)c).Name != txt_timkiem.Name)
+                            {
+                                ((TextBox)c).Enabled = true;
+                            }
+                        }
+                    }
+                    btn_mohinh.Enabled = true;
                     string saveDirectory = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
                     txt_mahang.Text = row.Cells[0].Value.ToString();
                     txt_tenhang.Text = row.Cells[1].Value.ToString();
@@ -102,6 +126,18 @@ namespace QLBH
         private void btn_them_Click(object sender, EventArgs e)
         {
             ResetValues();
+            foreach (Control c in this.Controls)
+            {
+                if (c is TextBox)
+                {
+                    if (((TextBox)c).Name != txt_timkiem.Name)
+                    {
+                        ((TextBox)c).Enabled = true;
+                    }
+                }
+            }
+            btn_mohinh.Enabled = true;
+            txt_tenhang.Focus();
         }
 
         private void btn_luu_Click(object sender, EventArgs e)
@@ -283,6 +319,12 @@ namespace QLBH
             {
                 dgv_hang.DataSource = busHang.SearchHang(txt_timkiem.Text);
             }
+        }
+
+        private void dgv_hang_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+                btn_xoa_Click(sender, e);
         }
     }
 }

@@ -41,15 +41,19 @@ namespace QLBH
                 if(c is TextBox)
                 {
                     if(((TextBox)c).Name != txt_timkiem.Name)
+                    {
                         ((TextBox)c).Text = null;
+                        ((TextBox)c).Enabled = false;
+                    }
                 }
-                btn_luu.Enabled = true;
-               
             }
+            btn_luu.Enabled = true;
             btn_xoa.Enabled = false;
             btn_update.Enabled = false;
             rad_nam.Checked = false;
-            rad_nu.Checked = false;
+            rad_nu.Checked = false;  
+            rad_nam.Enabled = false;
+            rad_nu.Enabled = false;
             btn_luu.Enabled = true;
             btn_update.Enabled = false;
             btn_xoa.Enabled = false;
@@ -120,6 +124,18 @@ namespace QLBH
                 txt_diachi.Text = row.Cells[2].Value.ToString();
                 txt_tenkhach.Text = row.Cells[1].Value.ToString();
                 txt_sdt.Text = row.Cells[0].Value.ToString();
+                foreach (Control c in this.Controls)
+                {
+                    if (c is TextBox)
+                    {
+                        if (((TextBox)c).Name != txt_timkiem.Name)
+                        {
+                            ((TextBox)c).Enabled = true;
+                        }
+                    }
+                }
+                rad_nam.Enabled = true;
+                rad_nu.Enabled = true;
                 if (row.Cells[4].Value.ToString() == "Nam")
                 {
                     rad_nam.Checked = true;
@@ -136,7 +152,19 @@ namespace QLBH
         private void btn_them_Click(object sender, EventArgs e)
         {
             ResetValues();
-            
+            foreach (Control c in this.Controls)
+            {
+                if (c is TextBox)
+                {
+                    if (((TextBox)c).Name != txt_timkiem.Name)
+                    {
+                        ((TextBox)c).Enabled = true;
+                    }
+                }
+            }
+            rad_nam.Enabled = true;
+            rad_nu.Enabled = true;
+            txt_tenkhach.Focus();
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)
@@ -262,19 +290,17 @@ namespace QLBH
             }
         }
 
-        private void txt_tenkhach_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rad_nam_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+   
 
         private void rad_nu_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgv_khachhang_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+                btn_xoa_Click(sender, e);
         }
     }
 }

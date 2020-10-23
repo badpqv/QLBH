@@ -246,6 +246,7 @@
             this.dgv_hang.Size = new System.Drawing.Size(865, 161);
             this.dgv_hang.TabIndex = 17;
             this.dgv_hang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dgv_hang.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgv_hang_KeyDown);
             // 
             // txt_timkiem
             // 
