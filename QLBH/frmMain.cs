@@ -243,6 +243,13 @@ namespace QLBH
             }
         }
 
-      
+        private void frmMain_QLBH_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            var result =MessageBox.Show("Bạn có muốn thoát khỏi chương trình?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+                Application.ExitThread();
+            else
+                e.Cancel = true;
+        }
     }
 }

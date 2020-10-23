@@ -227,6 +227,7 @@
             this.Name = "frmMain_QLBH";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMain_QLBH";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_QLBH_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_QLBH_Load);
             this.MdiChildActivate += new System.EventHandler(this.frmMain_QLBH_MdiChildActivate);
             this.menuStrip1.ResumeLayout(false);
