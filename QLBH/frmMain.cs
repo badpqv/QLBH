@@ -141,7 +141,7 @@ namespace QLBH
 
         private void hồSơNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmThongTinNV profileNv = new frmThongTinNV(email);
+            frmHoSoNhanvien profileNv = new frmHoSoNhanvien(email);
             if (!CheckExistForm(profileNv.Name))
             {
                 profileNv.MdiParent = this;

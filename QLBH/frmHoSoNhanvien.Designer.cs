@@ -1,6 +1,6 @@
 ﻿namespace QLBH
 {
-    partial class frmThongTinNV
+    partial class frmHoSoNhanvien
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThongTinNV));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHoSoNhanvien));
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_passcu = new System.Windows.Forms.TextBox();
@@ -191,7 +191,7 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // frmThongTinNV
+            // frmHoSoNhanvien
             // 
             this.AcceptButton = this.btn_doimatkhau;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,9 +211,9 @@
             this.Controls.Add(this.txt_passcu);
             this.Controls.Add(this.txt_emailnv);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmThongTinNV";
+            this.Name = "frmHoSoNhanvien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmThongTinNV";
+            this.Text = "frmHosoNV";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

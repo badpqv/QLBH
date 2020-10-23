@@ -13,12 +13,12 @@ using System.Windows.Forms;
 
 namespace QLBH
 {
-    public partial class frmThongTinNV : Form
+    public partial class frmHoSoNhanvien : Form
     {
         Thread th;
         string strEmail;
         BUS_NhanVien busNhanvien = new BUS_NhanVien();
-        public frmThongTinNV(string email)
+        public frmHoSoNhanvien(string email)
         {
             InitializeComponent();
             strEmail = email;
