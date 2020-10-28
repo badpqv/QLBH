@@ -35,6 +35,10 @@ namespace DAL_QLBH
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
             }
+            catch(Exception e)
+            {
+
+            }
             finally
             {
                 _con.Close();
@@ -58,6 +62,10 @@ namespace DAL_QLBH
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
             }
+            catch(Exception e)
+            {
+                
+            }
             finally
             {
                 _con.Close();
@@ -76,6 +84,10 @@ namespace DAL_QLBH
                 cmd.Parameters.AddWithValue("DienThoai", soDT);
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
+            }
+            catch(Exception e)
+            {
+
             }
             finally
             {

@@ -20,7 +20,7 @@ namespace QLBH
     public partial class frmDangNhap : Form
     {
         BUS_NhanVien busNhanVien = new BUS_NhanVien();
-        public int vaitro { set; get; }
+        public string vaitro { set; get; }
         static string logFilePath = Application.StartupPath + "\\login.log";
         public frmDangNhap()
         {
@@ -46,7 +46,7 @@ namespace QLBH
                 frmMain_QLBH.session = 1;
                 frmMain_QLBH.email = txt_emailnv.Text;
                 DataTable dt = busNhanVien.VaiTroNhanVien(nv.EmailNv);
-                vaitro = Convert.ToInt32(dt.Rows[0][0].ToString());
+                vaitro = dt.Rows[0][0].ToString();
                 MessageBox.Show("Đăng nhập thành công");
                 if (cbox_remember.Checked)
                 {
@@ -62,17 +62,7 @@ namespace QLBH
                     Settings.Default.isRemember = false;
                     Settings.Default.Save();
                 }
-                using (StreamReader sr = new StreamReader(logFilePath))
-                {
-                    if (!sr.ReadToEnd().Contains(txt_emailnv.Text))
-                    {
-                        frmMain_QLBH.isFirstLogin = true;
-                    }
-                }
-                StreamWriter sw = new StreamWriter(logFilePath,true);
-                sw.WriteLine(txt_emailnv.Text);
-                sw.Flush();
-                sw.Close();
+           
                 this.Close();
             }
             else
@@ -134,7 +124,7 @@ namespace QLBH
         {
             try
             {
-                SmtpClient client = new SmtpClient("smtp.gmail.com", 25);
+                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
                 NetworkCredential cred = new NetworkCredential("pv20092001@gmail.com","123abcABC");
                 MailMessage msg = new MailMessage();
                 msg.From = new MailAddress("pv20092001@gmail.com");

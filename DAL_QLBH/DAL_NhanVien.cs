@@ -10,7 +10,7 @@ using DTO_QLBH;
 
 namespace DAL_QLBH
 {
-    public class DAL_NhanVien:DbConnect
+    public class DAL_NhanVien : DbConnect
     {
         public DataTable getNhanVien()
         {
@@ -18,7 +18,7 @@ namespace DAL_QLBH
             SqlDataAdapter da = new SqlDataAdapter("Select * from NhanVien", _con);
             da.Fill(dtNhanvien);
             return dtNhanvien;
-        } 
+        }
         public DataTable VaiTroNhanVien(string email)
         {
             try
@@ -58,7 +58,7 @@ namespace DAL_QLBH
                 _con.Close();
             }
         }
-       
+
         public bool NhanVienDangNhap(DTO_Nhanvien nv)
         {
             try
@@ -184,7 +184,7 @@ namespace DAL_QLBH
                 cmd.Connection = _con;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "[sp_UpdateNHANVIEN]";
-                cmd.Parameters.AddWithValue("HoVaTen",nv.TenNhanVien);
+                cmd.Parameters.AddWithValue("HoVaTen", nv.TenNhanVien);
                 cmd.Parameters.AddWithValue("Email", nv.EmailNv);
                 cmd.Parameters.AddWithValue("DiaChi", nv.DiaChi);
                 cmd.Parameters.AddWithValue("VaiTro", nv.VaiTro);

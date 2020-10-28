@@ -95,12 +95,12 @@ namespace QLBH
         }
         private void btn_luu_Click(object sender, EventArgs e)
         {
-            int role = 0;
+            var role = "Nhân viên";
             if (rad_admin.Checked)
-                role = 1;
-            int tinhtrang = 0;
+                role = "Quản trị";
+            var tinhtrang = "Ngừng hoạt động";
             if (rad_hd.Checked)
-                tinhtrang = 1;
+                tinhtrang = "Hoạt động";
             if (txt_emailnv.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập mail", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -140,11 +140,12 @@ namespace QLBH
             else
             {
                 DTO_Nhanvien nv = new DTO_Nhanvien(txt_emailnv.Text,txt_tennv.Text,txt_diachi.Text,role,tinhtrang);
+            
                 if (busNhanVien.InsertNhanVien(nv))
                 {
-                    MessageBox.Show("Thêm thành công");
-                    ResetValues();
-                    LoadGridView_NhanVien();
+                            MessageBox.Show("Thêm thành công");
+                            ResetValues();
+                            LoadGridView_NhanVien();
                 }
                 else
                 {
@@ -220,12 +221,12 @@ namespace QLBH
             }
             else
             {
-                int role =0;
+                string role ="Nhân viên";
                 if (rad_admin.Checked)
-                    role = 1;
-                int tinhtrang = 0;
+                    role = "Quản trị";
+                string tinhtrang = "Ngừng hoạt động";
                 if (rad_hd.Checked)
-                    tinhtrang = 1;
+                    tinhtrang = "Hoạt động";
                 DTO_Nhanvien nv = new DTO_Nhanvien(txt_emailnv.Text, txt_tennv.Text, txt_diachi.Text, role, tinhtrang);
                 if(MessageBox.Show("Bạn có chắc muốn sửa","Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
