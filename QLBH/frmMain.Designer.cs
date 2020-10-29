@@ -70,8 +70,9 @@
             this.đăngXuấtToolStripMenuItem,
             this.hồSơNhânViênToolStripMenuItem,
             this.thoátToolStripMenuItem});
+            this.hệThốngToolStripMenuItem.Image = global::QLBH.Properties.Resources.system;
             this.hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
-            this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.hệThốngToolStripMenuItem.Text = "Hệ thống";
             // 
             // đăngNhậpToolStripMenuItem
@@ -116,8 +117,9 @@
             this.sảnPhẩmToolStripMenuItem,
             this.nhânViênToolStripMenuItem,
             this.kháchHàngToolStripMenuItem});
+            this.danhMụcToolStripMenuItem.Image = global::QLBH.Properties.Resources.category;
             this.danhMụcToolStripMenuItem.Name = "danhMụcToolStripMenuItem";
-            this.danhMụcToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.danhMụcToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
             this.danhMụcToolStripMenuItem.Text = "Danh mục";
             // 
             // sảnPhẩmToolStripMenuItem
@@ -151,8 +153,9 @@
             // 
             this.thốngKêToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thốngKêSảnPhẩmToolStripMenuItem});
+            this.thốngKêToolStripMenuItem.Image = global::QLBH.Properties.Resources.statistics;
             this.thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
-            this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
             this.thốngKêToolStripMenuItem.Text = "Thống kê";
             // 
             // thốngKêSảnPhẩmToolStripMenuItem
@@ -169,8 +172,9 @@
             this.báoCáoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hướngDẫnSữDụngToolStripMenuItem,
             this.giớiThiệuPhầnMềmToolStripMenuItem});
+            this.báoCáoToolStripMenuItem.Image = global::QLBH.Properties.Resources.information;
             this.báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
-            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.báoCáoToolStripMenuItem.Text = "Hướng dẫn";
             // 
             // hướngDẫnSữDụngToolStripMenuItem

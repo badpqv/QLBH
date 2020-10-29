@@ -185,7 +185,7 @@ namespace QLBH
                 txt_emailnv.Text = row.Cells[3].Value.ToString();
                 txt_tennv.Text = row.Cells[2].Value.ToString();
                 txt_diachi.Text = row.Cells[4].Value.ToString();
-                if (row.Cells[5].Value.ToString() == "1")
+                if (row.Cells[5].Value.ToString() == "Quản trị")
                 {
                     rad_admin.Checked = true;
                 }
@@ -193,7 +193,7 @@ namespace QLBH
                 {
                     rad_nv.Checked = true;
                 }
-                if (row.Cells[6].Value.ToString() == "1")
+                if (row.Cells[6].Value.ToString() == "Hoạt động")
                 {
                     rad_hd.Checked = true;
                 }

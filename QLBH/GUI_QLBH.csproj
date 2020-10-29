@@ -195,6 +195,12 @@
     <Content Include="Images\255471.jpg" />
     <Content Include="Images\keqing.jpg" />
     <Content Include="Poly.ico" />
+    <None Include="Resources\information.png" />
+    <None Include="Resources\instructions1.png" />
+    <None Include="Resources\statistics.png" />
+    <None Include="Resources\category.png" />
+    <None Include="Resources\system1.png" />
+    <None Include="Resources\system.png" />
     <None Include="Resources\open.png" />
     <None Include="Resources\loupe.png" />
     <None Include="Resources\listing-option.png" />
