@@ -221,6 +221,7 @@ namespace QLBH
             }
             else
             {
+                
                 string role ="Nhân viên";
                 if (rad_admin.Checked)
                     role = "Quản trị";
