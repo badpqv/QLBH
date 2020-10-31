@@ -77,7 +77,7 @@ namespace QLBH
                     {
                         if (c is TextBox)
                         {
-                            if (((TextBox)c).Name != txt_timkiem.Name && ((TextBox)c).Name != txt_mahang.Name)
+                            if (((TextBox)c).Name != txt_timkiem.Name && ((TextBox)c).Name != txt_mahang.Name && ((TextBox)c).Name != txt_hinh.Name)
                             {
                                 ((TextBox)c).Enabled = true;
                             }
@@ -128,7 +128,7 @@ namespace QLBH
             {
                 if (c is TextBox)
                 {
-                    if (((TextBox)c).Name != txt_timkiem.Name && ((TextBox)c).Name != txt_mahang.Name)
+                    if (((TextBox)c).Name != txt_timkiem.Name && ((TextBox)c).Name != txt_mahang.Name && txt_hinh.Name != ((TextBox)c).Name)
                     {
                         ((TextBox)c).Enabled = true;
                     }

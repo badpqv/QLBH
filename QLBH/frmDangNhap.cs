@@ -21,7 +21,6 @@ namespace QLBH
     {
         BUS_NhanVien busNhanVien = new BUS_NhanVien();
         public string vaitro { set; get; }
-        static string logFilePath = Application.StartupPath + "\\login.log";
         public frmDangNhap()
         {
             InitializeComponent();

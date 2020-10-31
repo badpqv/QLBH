@@ -42,6 +42,7 @@ namespace QLBH
             if(session == 1)
             {
                 nhânViênToolStripMenuItem.Visible = true;
+                nhânViênToolStripMenuItem.Enabled = true;
                 danhMụcToolStripMenuItem.Visible = true;
                 đăngXuấtToolStripMenuItem.Enabled = true;
                 thốngKêToolStripMenuItem.Visible = true;
@@ -58,6 +59,7 @@ namespace QLBH
             else
             {
                 nhânViênToolStripMenuItem.Visible = false;
+                nhânViênToolStripMenuItem.Enabled = true;
                 danhMụcToolStripMenuItem.Visible = false;
                 đăngXuấtToolStripMenuItem.Enabled = false;
                 thốngKêToolStripMenuItem.Visible = false;
